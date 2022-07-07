@@ -1,0 +1,137 @@
+*{
+    margin: 0px;/*margen ext*/
+    padding:0px;/*margen interno*/
+}
+body{
+    margin-top: 16px;
+    padding: 5px;
+}
+
+.redes {
+    width: 25px;
+}
+
+body{
+    background-color:antiquewhite 
+}
+
+.picture {
+    padding: 15px;
+    width: 350px;
+}
+
+h1 {
+    padding: 40px;
+    font-family: 'Audiowide', cursive; 
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Sigmar One', cursive;
+}
+
+.lista{
+    display: flex;
+}
+
+.icono__marca{display: flex;
+    width: 100px;
+    height: 100px;
+    padding-right: 100px;
+    
+}
+
+.lista__menu{
+    display: flex;
+    width: 0px;
+    height: 0px;
+    padding:  6px;
+    margin: 5px;
+    font-family: 'Lobster', cursive;
+    list-style: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 1;
+    }
+
+.lista__menu a {
+        color: rgb(31, 84, 132);
+        text-decoration: none;
+    }
+    
+.i{
+        margin: 50px;
+        list-style:lower-alpha;
+        font-family: 'Audiowide', cursive;
+    }
+    
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    
+    width: 250px;
+    height: 80%;
+    border: 1px solid darkgrey;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+}
+.card__img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.card__info{
+
+    width: 90%;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+.parrafo__historia{
+    font-family: 'Lobster', cursive;
+    text-decoration-style:dashed;
+}
+
+iframe {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border-color: rgb(170, 45, 45);
+    justify-content:space-between;
+}
+
+.pagprin{
+    text-decoration: none;
+}
+
+.fut{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productos__juguetes{
+    display: grid;
+    width: 50%;
+    height: 50%;
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr  ;
+    grid-template-areas: "1 2 3 4 5"
+                        "6 7 8 9 10 "
+                        "11 12 13 14 15"
+                        "16 17 18 19 ";
+                        
+                        
+}
+
+
