@@ -3,8 +3,11 @@
     padding:0px;/*margen interno*/
 }
 body{
-    margin-top: 16px;
+    height: 100%;
+    width: 100%;
+    margin: 16px;
     padding: 5px;
+    
 }
 
 .redes {
@@ -15,9 +18,25 @@ body{
     background-color:antiquewhite 
 }
 
+.cont__container{
+    display: grid;
+    width: 80vw;
+    height: 80vh;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.pictures{
+    width: 200px;
+    height: 200px;
+}
+
+
+
 .picture {
     padding: 15px;
-    width: 350px;
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
@@ -37,7 +56,9 @@ h2 {
 .icono__marca{display: flex;
     width: 100px;
     height: 100px;
-    padding-right: 100px;
+    border-style:double;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -119,19 +140,266 @@ iframe {
     align-items: center;
     justify-content: space-between;
 }
-
-.productos__juguetes{
+.productos__grid{
     display: grid;
-    width: 50%;
-    height: 50%;
-    grid-template-columns:  1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr  ;
-    grid-template-areas: "1 2 3 4 5"
-                        "6 7 8 9 10 "
-                        "11 12 13 14 15"
-                        "16 17 18 19 ";
-                        
-                        
+    width: 95vw;
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:    1fr 1fr 1fr 1fr   ;
+    grid-template-areas:"uno     dos    tres"
+                        "cuatro  cinco  seis"
+                        "siete   ocho  nueve"
+                        "diez  once  doce" ;
+                        column-gap: 20px;
+                        row-gap: 10px;
+                    
 }
+
+.uno{
+    grid-area:  uno;
+    background-image: url("../resourses/jug\ armas.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+}
+
+.dos{
+    grid-area:  dos;
+    background-image: url("../resourses/jug\ autos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tres{
+    grid-area:  tres ;
+    background-image: url("../resourses/jug\ cocinagde.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cuatro {
+    grid-area: cuatro;
+    background-image: url("../resourses/jug\ colorear.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cinco{
+    grid-area: cinco;
+    background-image: url("../resourses/jug\ de\ mesa.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.seis{
+    grid-area:  seis;
+    background-image: url("../resourses/jug\ dino.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.siete{
+    grid-area:  siete;
+    background-image: url("../resourses/jug\ doctora.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ocho{grid-area:  ocho;
+    background-image: url("../resourses/jug\ pop\ it.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;                      
+}
+.nueve{grid-area:  nueve;
+    background-image: url("../resourses/jug\ maletin\ juliana.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}                                  
+.diez{grid-area:  diez;
+    background-image: url("../resourses/jug\ militar.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}                                 
+.once{grid-area:  once;
+    background-image: url("../resourses/jug\ muñecas.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.doce{grid-area:  doce;
+    background-image: url("../resourses/jug\ naipes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* grid index  */
+
+.img__grid {
+    display: grid;
+    grid-column: center;
+    width: 90vw;
+    height: 90vh;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    
+    column-gap: 15px;
+    row-gap: 10px;
+}
+.imagen__1 {
+    width: 90%;
+    height: 90%;
+    grid-area: 1/1;
+}
+.imagen__2 {
+    width: 90%;
+    height: 90%;
+    grid-area: 1/2;
+}
+.imagen__3 {
+    width: 90%;
+    height: 90%;
+    grid-area: 2/1;
+}
+.imagen__4 {
+    width: 90%;
+    height: 90%;
+    grid-area: 2/2;
+}
+
+
+
+                     /* media query de TABLET */
+
+@media  (min-width: 576px)  and (max-width: 992px) {
+    .lista{
+        
+        flex-direction: column;
+        flex-basis:  100%;
+        
+    }
+    
+    .icono__marca{
+        flex-direction: column;
+        flex-basis:  100%;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        
+        }
+    
+    .lista__menu{
+        flex-direction: column;
+        flex-basis: 100%;
+        width: 100%;
+        }
+
+    /* responsive jugueteria html */
+    .productos__grid{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr ;
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+
+    /* responsive productos zf y comida rapida html */
+
+    .cont__container{
+        margin: 10px;
+        padding: 80px;
+        width: 95vw;
+        height: 95vh;
+        flex-basis: 100%;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns:1fr;
+        
+        
+    }
+    .pictures{
+        
+        margin: 10px;
+        padding: 10px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+        
+}
+
+
+
+/* media query cel */
+/*  @media screen min-width: 576px and max-width: 992px; */
+
+@media  (min-width: 320px)  and (max-width: 575px) {
+    .lista{
+        
+        flex-direction: column;
+        flex-basis:  100%;
+        
+    }
+    
+    .icono__marca{
+        flex-direction: column;
+        flex-basis:  100%;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        
+        }
+    
+    .lista__menu{
+        flex-direction: column;
+        flex-basis: 100%;
+        width: 100%;
+        }
+
+         /* responsive jugueteria html */
+    .productos__grid{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr ;
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+}
+
+ /* responsive productos zf y comida rapida html */
+
+ .zf__container{
+    margin: 10px;
+    padding: 80px;
+    width: 95vw;
+    height: 95vh;
+    flex-basis: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns:1fr;
+    
+    
+}
+.pictures{
+    
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
 
 
