@@ -16,6 +16,7 @@ body{
 
 body{
     background-color:antiquewhite 
+
 }
 
 .cont__container{
@@ -43,6 +44,11 @@ h1 {
     padding: 40px;
     font-family: 'Audiowide', cursive; 
     text-align: center;
+}
+
+.h1__animation {
+    background-image: linear-gradient(white blue red);
+  
 }
 
 h2 {
@@ -80,6 +86,12 @@ h2 {
         color: rgb(31, 84, 132);
         text-decoration: none;
     }
+
+    /* aplico transform y transition a la nav. */
+.lista__menu :hover {
+    transform: scale(1.5 , 1.5 );
+    transition: all 1s;
+}
     
 .i{
         margin: 50px;
@@ -153,6 +165,10 @@ iframe {
                         column-gap: 20px;
                         row-gap: 10px;
                     
+}
+.productos__grid :hover{
+    transform: scale( 1.5 ,  1.5 );
+    transition: all 1s;
 }
 
 .uno{
