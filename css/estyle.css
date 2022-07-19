@@ -48,7 +48,7 @@ h1 {
 
 .h1__animation {
     background-image: linear-gradient(white blue red);
-  
+
 }
 
 h2 {
@@ -291,7 +291,7 @@ iframe {
 
 
 
-                     /* media query de TABLET */
+         /* media query de TABLET */
 
 @media  (min-width: 576px)  and (max-width: 992px) {
     .lista{
