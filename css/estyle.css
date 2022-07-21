@@ -15,7 +15,7 @@ body{
 }
 
 body{
-    background-color:antiquewhite 
+    background-color: grey
 
 }
 
@@ -98,7 +98,12 @@ h2 {
         list-style:lower-alpha;
         font-family: 'Audiowide', cursive;
     }
-    
+.cont__container{
+    display flex;
+    justify-items: center;
+    justify-content: space-evenly;
+
+}   
 
 .container{
     display: flex;
@@ -250,6 +255,112 @@ iframe {
 }
 .doce{grid-area:  doce;
     background-image: url("../resourses/jug\ naipes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* galeria productos z-f */
+
+.productos__zeta{
+    display: grid;
+    width: 95vw;
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:    1fr 1fr 1fr 1fr   ;
+    grid-template-areas:"uno     dos    tres"
+                        "cuatro  cinco  seis"
+                        "siete   ocho  nueve"
+                        "diez  once  doce" ;
+                        column-gap: 20px;
+                        row-gap: 10px;
+                    
+}
+.productos__zeta :hover{
+    transform: scale( 1.5 ,  1.5 );
+    transition: all 1s;
+}
+
+.uno{
+    grid-area:  uno;
+    background-image: url("../resourses/acolchadovintage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+}
+
+.dos{
+    grid-area:  dos;
+    background-image: url("../resourses/zf4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tres{
+    grid-area:  tres ;
+    background-image: url("../resourses/acolchadovintage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cuatro {
+    grid-area: cuatro;
+    background-image: url("../resourses/zf2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cinco{
+    grid-area: cinco;
+    background-image: url("../resourses/zf4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.seis{
+    grid-area:  seis;
+    background-image: url("../resourses/zf\ logo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.siete{
+    grid-area:  siete;
+    background-image: url("../resourses/zf3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ocho{grid-area:  ocho;
+    background-image: url("../resourses/acolchadovintage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;                      
+}
+.nueve{grid-area:  nueve;
+    background-image: url("../resourses/zf1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}                                  
+.diez{grid-area:  diez;
+    background-image: url("../resourses/zf3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}                                 
+.once{grid-area:  once;
+    background-image: url("../resourses/chedarrayado.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.doce{grid-area:  doce;
+    background-image: url("../resourses/zf3.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
