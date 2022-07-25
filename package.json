@@ -1,0 +1,23 @@
+{
+  "name": "proyecto.lodeclaudio.mena_fabian",
+  "version": "1.0.0",
+  "description": "<h1>lo de claudio -proyecto de coderhouse</h1>\r <p>este sitio es para un negocio familiar real,creado para adquirir conocimientos y experiencia desarrollo web </p>\r <h2>tecnologias usadas</h2>\r <ul>\r <li>html5</li>\r  <li>css3</li>\r  <li>bootstrap</li>\r  <li>sass</li>\r  </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabianmena/lo-de-claudio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabianmena/lo-de-claudio/issues"
+  },
+  "homepage": "https://github.com/fabianmena/lo-de-claudio#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

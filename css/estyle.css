@@ -5,8 +5,8 @@
 body{
     height: 100%;
     width: 100%;
-    margin: 16px;
-    padding: 5px;
+    margin: 0px;
+    padding: 10px;
     
 }
 
@@ -15,7 +15,7 @@ body{
 }
 
 body{
-    background-color: grey
+    background-color: rgb(54, 54, 94)
 
 }
 
@@ -31,6 +31,7 @@ body{
     width: 200px;
     height: 200px;
 }
+
 
 
 
@@ -83,7 +84,7 @@ h2 {
     }
 
 .lista__menu a {
-        color: rgb(31, 84, 132);
+        color: rgb(218, 47, 138);
         text-decoration: none;
     }
 
@@ -92,10 +93,17 @@ h2 {
     transform: scale(1.5 , 1.5 );
     transition: all 1s;
 }
+
+.consigna{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+}
     
 .i{
-        margin: 50px;
-        list-style:lower-alpha;
+        margin: 20px;
+        list-style:circle;
         font-family: 'Audiowide', cursive;
     }
 .cont__container{
@@ -136,7 +144,7 @@ h2 {
 
 
 .parrafo__historia{
-    font-family: 'Lobster', cursive;
+    font-family: 'Audiowide', cursive;
     text-decoration-style:dashed;
 }
 
@@ -149,13 +157,18 @@ iframe {
 }
 
 .pagprin{
+    color: rgb(218, 47, 138);
     text-decoration: none;
 }
 
 .fut{
-    display: flex;
+    display:inline-block;
+    margin: 20px;
+    padding: 20px;
     align-items: center;
     justify-content: space-between;
+    color: rgb(218, 47, 138);
+   
 }
 .productos__grid{
     display: grid;
@@ -176,7 +189,7 @@ iframe {
     transition: all 1s;
 }
 
-.uno{
+.un{
     grid-area:  uno;
     background-image: url("../resourses/jug\ armas.jpg");
     background-position: center;
@@ -186,7 +199,7 @@ iframe {
     height: auto;
 }
 
-.dos{
+.do{
     grid-area:  dos;
     background-image: url("../resourses/jug\ autos.jpg");
     background-position: center;
@@ -194,66 +207,66 @@ iframe {
     background-repeat: no-repeat;
 }
 
-.tres{
+.tre{
     grid-area:  tres ;
     background-image: url("../resourses/jug\ cocinagde.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.cuatro {
+.cuatr {
     grid-area: cuatro;
     background-image: url("../resourses/jug\ colorear.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.cinco{
+.cinc{
     grid-area: cinco;
     background-image: url("../resourses/jug\ de\ mesa.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.seis{
+.sei{
     grid-area:  seis;
     background-image: url("../resourses/jug\ dino.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.siete{
+.siet{
     grid-area:  siete;
     background-image: url("../resourses/jug\ doctora.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.ocho{grid-area:  ocho;
+.och{grid-area:  ocho;
     background-image: url("../resourses/jug\ pop\ it.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;                      
 }
-.nueve{grid-area:  nueve;
+.nuev{grid-area:  nueve;
     background-image: url("../resourses/jug\ maletin\ juliana.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }                                  
-.diez{grid-area:  diez;
+.die{grid-area:  diez;
     background-image: url("../resourses/jug\ militar.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }                                 
-.once{grid-area:  once;
+.onc{grid-area:  once;
     background-image: url("../resourses/jug\ muñecas.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.doce{grid-area:  doce;
+.doc{grid-area:  doce;
     background-image: url("../resourses/jug\ naipes.jpg");
     background-position: center;
     background-size: cover;
@@ -269,7 +282,7 @@ iframe {
     height: 95vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:    1fr 1fr 1fr 1fr   ;
-    grid-template-areas:"uno     dos    tres"
+    grid-template-areas:"uno    dos   tres"
                         "cuatro  cinco  seis"
                         "siete   ocho  nueve"
                         "diez  once  doce" ;
@@ -284,7 +297,7 @@ iframe {
 
 .uno{
     grid-area:  uno;
-    background-image: url("../resourses/acolchadovintage.jpg");
+    background-image: url("../resourses/almohada\ negra\ y\ celeste.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -294,58 +307,59 @@ iframe {
 
 .dos{
     grid-area:  dos;
-    background-image: url("../resourses/zf4.jpg");
+    background-image: url("../resourses/cambiador\ moño\ azulbco.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .tres{
-    grid-area:  tres ;
-    background-image: url("../resourses/acolchadovintage.jpg");
+    grid-area:  tres;
+    background-image: url("../resourses/ajuar\ verde\ forro\ bco.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .cuatro {
     grid-area: cuatro;
-    background-image: url("../resourses/zf2.jpg");
+    background-image: url("../resourses/almohada\ mateo.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .cinco{
     grid-area: cinco;
-    background-image: url("../resourses/zf4.jpg");
+    background-image: url("../resourses/borde\ cambiador\ carrusel.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .seis{
     grid-area:  seis;
-    background-image: url("../resourses/zf\ logo.jpg");
+    background-image: url("../resourses/zfunicorniopeluche.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .siete{
     grid-area:  siete;
-    background-image: url("../resourses/zf3.jpg");
+    background-image: url("../resourses/peluches\ gatitos.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .ocho{grid-area:  ocho;
-    background-image: url("../resourses/acolchadovintage.jpg");
+    background-image: url("../resourses/peluche\ mia\ luna\ nube.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;                      
 }
 .nueve{grid-area:  nueve;
-    background-image: url("../resourses/zf1.jpg");
+    background-image: url("../resourses/peluche\ corazon.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }                                  
 .diez{grid-area:  diez;
     background-image: url("../resourses/zf3.jpg");
@@ -380,8 +394,8 @@ iframe {
     row-gap: 10px;
 }
 .imagen__1 {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 60%;
     grid-area: 1/1;
 }
 .imagen__2 {
@@ -437,6 +451,8 @@ iframe {
         flex-direction: column;
     }
 
+    
+
     /* responsive productos zf y comida rapida html */
 
     .cont__container{
@@ -466,7 +482,7 @@ iframe {
 
 
 /* media query cel */
-/*  @media screen min-width: 576px and max-width: 992px; */
+/*  @media screen min-width: 320 px and max-width: 575 px; */
 
 @media  (min-width: 320px)  and (max-width: 575px) {
     .lista{
@@ -504,7 +520,7 @@ iframe {
 
  /* responsive productos zf y comida rapida html */
 
- .zf__container{
+.zf__container{
     margin: 10px;
     padding: 80px;
     width: 95vw;
