@@ -1,3 +1,6 @@
+@import "header";
+@import "mediaqueries";
+
 *{
     margin: 0px;/*margen ext*/
     padding:0px;/*margen interno*/
@@ -15,7 +18,7 @@ body{
 }
 
 body{
-    background-color: rgb(54, 54, 94)
+    background-color: rgb(70, 205, 185)
 
 }
 
@@ -56,51 +59,7 @@ h2 {
     font-family: 'Sigmar One', cursive;
 }
 
-.lista{
-    display: flex;
-}
 
-.icono__marca{display: flex;
-    width: 100px;
-    height: 100px;
-    border-style:double;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.lista__menu{
-    display: flex;
-    width: 0px;
-    height: 0px;
-    padding:  6px;
-    margin: 5px;
-    font-family: 'Lobster', cursive;
-    list-style: none;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-grow: 1;
-    }
-
-.lista__menu a {
-        color: rgb(218, 47, 138);
-        text-decoration: none;
-    }
-
-    /* aplico transform y transition a la nav. */
-.lista__menu :hover {
-    transform: scale(1.5 , 1.5 );
-    transition: all 1s;
-}
-
-.consigna{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding: auto;
-}
-    
 .i{
         margin: 20px;
         list-style:circle;
@@ -127,19 +86,21 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    
+            & .card__img{
+                width: 100%;
+                height: 100%;
+                margin-bottom: 20px;
+            }
+            & .card__info{
+            
+                width: 90%;
+                text-align: center;
+                line-height: 1.5;
+                margin-bottom: 20px;
+            }
+            
 
-}
-.card__img{
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
-}
-.card__info{
-
-    width: 90%;
-    text-align: center;
-    line-height: 1.5;
-    margin-bottom: 20px;
 }
 
 
@@ -152,12 +113,12 @@ iframe {
     display: flex;
     width: 300px;
     height: 300px;
-    border-color: rgb(170, 45, 45);
+    border-color: rgb(48, 147, 223);
     justify-content:space-between;
 }
 
 .pagprin{
-    color: rgb(218, 47, 138);
+    color: rgb(20, 73, 143);
     text-decoration: none;
 }
 
@@ -289,6 +250,7 @@ iframe {
                         column-gap: 20px;
                         row-gap: 10px;
                     
+                    
 }
 .productos__zeta :hover{
     transform: scale( 1.5 ,  1.5 );
@@ -368,13 +330,13 @@ iframe {
     background-repeat: no-repeat;
 }                                 
 .once{grid-area:  once;
-    background-image: url("../resourses/chedarrayado.jpg");
+    background-image: url("../resourses/almohada\ roja\ milena.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .doce{grid-area:  doce;
-    background-image: url("../resourses/zf3.jpg");
+    background-image: url("../resourses/peluche\ caballito.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -416,132 +378,7 @@ iframe {
 
 
 
-         /* media query de TABLET */
-
-@media  (min-width: 576px)  and (max-width: 992px) {
-    .lista{
-        
-        flex-direction: column;
-        flex-basis:  100%;
-        
-    }
-    
-    .icono__marca{
-        flex-direction: column;
-        flex-basis:  100%;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        
-        }
-    
-    .lista__menu{
-        flex-direction: column;
-        flex-basis: 100%;
-        width: 100%;
-        }
-
-    /* responsive jugueteria html */
-    .productos__grid{
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-        grid-template-columns: 1fr ;
-        flex-basis: 100%;
-        flex-direction: column;
-    }
-
-    
-
-    /* responsive productos zf y comida rapida html */
-
-    .cont__container{
-        margin: 10px;
-        padding: 80px;
-        width: 95vw;
-        height: 95vh;
-        flex-basis: 100%;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        grid-template-columns:1fr;
-        
-        
-    }
-    .pictures{
-        
-        margin: 10px;
-        padding: 10px;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-        
-}
-
-
-
-/* media query cel */
-/*  @media screen min-width: 320 px and max-width: 575 px; */
-
-@media  (min-width: 320px)  and (max-width: 575px) {
-    .lista{
-        
-        flex-direction: column;
-        flex-basis:  100%;
-        
-    }
-    
-    .icono__marca{
-        flex-direction: column;
-        flex-basis:  100%;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        
-        }
-    
-    .lista__menu{
-        flex-direction: column;
-        flex-basis: 100%;
-        width: 100%;
-        }
-
-         /* responsive jugueteria html */
-    .productos__grid{
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-        grid-template-columns: 1fr ;
-        flex-basis: 100%;
-        flex-direction: column;
-    }
-}
-
- /* responsive productos zf y comida rapida html */
-
-.zf__container{
-    margin: 10px;
-    padding: 80px;
-    width: 95vw;
-    height: 95vh;
-    flex-basis: 100%;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns:1fr;
-    
-    
-}
-.pictures{
-    
-    margin: 10px;
-    padding: 10px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-}
-
+ 
 
 
 
