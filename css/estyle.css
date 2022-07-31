@@ -119,16 +119,24 @@
   /*margen interno*/ }
 
 body {
+  position: relative;
   width: 100%;
   margin: 0px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background: linear-gradient(black, blue);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  opacity: 0.9; }
+  opacity: 0.9;
+  padding-bottom: 3em; }
+
+footer {
+  padding: 1em 0;
+  margin-top: auto; }
 
 .redes {
   width: 25px; }
@@ -433,21 +441,21 @@ iframe {
   row-gap: 10px; }
 
 .imagen__1 {
-  width: 80%;
-  height: 60%;
+  width: 400px;
+  height: 300px;
   grid-area: 1/1; }
 
 .imagen__2 {
-  width: 90%;
-  height: 90%;
+  width: 400px;
+  height: 300px;
   grid-area: 1/2; }
 
 .imagen__3 {
-  width: 90%;
-  height: 90%;
+  width: 400px;
+  height: 300px;
   grid-area: 2/1; }
 
 .imagen__4 {
-  width: 90%;
-  height: 90%;
+  width: 400px;
+  height: 300px;
   grid-area: 2/2; }
