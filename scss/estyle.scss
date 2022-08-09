@@ -1,6 +1,8 @@
 @import "header";
 @import "mediaqueries";
 @import "operators";
+@import "footer";
+@import "variables";
 
 *{
     margin: 0px;/*margen ext*/
@@ -13,7 +15,6 @@ body{
     padding: 10px;
     display: flex;
     flex-direction: column;
-
     min-height: 100vh;
     background: linear-gradient(black,blue);
     background-repeat: no-repeat;
@@ -23,19 +24,6 @@ body{
     opacity: 0.9;
     padding-bottom: 3em;
 }
-footer{
-    
-    padding: 1em 0;
-    margin-top: auto;
-
-}
-
-
-.redes {
-    width: 25px;
-}
-
-
 
 
 .cont__container{
@@ -61,23 +49,20 @@ footer{
 }
 
 h1 {
-    color: rgb(224, 68, 227);
+    color: $colorh1 ;
     padding: 40px;
-    font-family: 'Audiowide', cursive; 
+    font-family: $font-titulos; 
     text-align: center;
-}
+    }
 
-.h1__animation {
-    background-image: linear-gradient(white blue red);
 
-}
 
 h2 {
-    color: rgb(15, 234, 238);
-    font-family: 'Sigmar One', cursive;
+    color: $colorh2;
+    font-family: $font-titulos;
 }
 h3{
-    color: rgb(15, 234, 238);
+    color: $colorh3;
 }
 
 
@@ -98,9 +83,9 @@ h3{
     justify-content: center;
     flex-wrap: wrap;
 }
-
+/* aplicando anidacion a tarjeta descriptivas */
 .card{
-    
+    display: flex;
     width: 250px;
     height: 80%;
     border: 1px solid darkgrey;
@@ -108,22 +93,19 @@ h3{
     align-items: center;
     margin: 20px;
     
-            & .card__img{
+            &__img{
                 width: 100%;
                 height: 100%;
                 margin-bottom: 20px;
             }
-            & .card__info{
+            &__info{
                 
                 width: 90%;
                 text-align: center;
                 line-height: 1.5;
                 margin-bottom: 0;
             }
-            
-            
-
-}
+    }
 p{
     color: rgb(224, 68, 227);
     margin:0px;
@@ -152,15 +134,7 @@ iframe {
     text-decoration: none;
 }
 
-.fut{
-    display:inline-block;
-    margin: 20px;
-    padding: 20px;
-    align-items: center;
-    justify-content: space-between;
-    color: rgb(218, 47, 138);
 
-}
 .productos__grid{
     display: grid;
     width: 95vw;
@@ -179,13 +153,11 @@ iframe {
     transform: scale( 1.5 ,  1.5 );
     transition: all 1s;
 }
-
+                /* utilizamos @extends para mbackgrounds repetitivos */
 .un{
     grid-area:  uno;
     background-image: url("../resourses/jug\ armas.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
     width: auto;
     height: auto;
 }
@@ -193,75 +165,53 @@ iframe {
 .do{
     grid-area:  dos;
     background-image: url("../resourses/jug\ autos.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 
 .tre{
     grid-area:  tres ;
     background-image: url("../resourses/jug\ cocinagde.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 .cuatr {
     grid-area: cuatro;
     background-image: url("../resourses/jug\ colorear.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 .cinc{
     grid-area: cinco;
     background-image: url("../resourses/jug\ de\ mesa.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 .sei{
     grid-area:  seis;
     background-image: url("../resourses/jug\ dino.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 .siet{
     grid-area:  siete;
     background-image: url("../resourses/jug\ doctora.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 .och{grid-area:  ocho;
     background-image: url("../resourses/jug\ pop\ it.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;                      
+    @extend .background-centrado;                   
 }
 .nuev{grid-area:  nueve;
     background-image: url("../resourses/jug\ maletin\ juliana.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }                                  
 .die{grid-area:  diez;
     background-image: url("../resourses/jug\ militar.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }                                 
 .onc{grid-area:  once;
     background-image: url("../resourses/jug\ muñecas.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 .doc{grid-area:  doce;
     background-image: url("../resourses/jug\ naipes.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 
 
@@ -290,9 +240,7 @@ iframe {
 .uno{
     grid-area:  uno;
     background-image: url("../resourses/almohada\ negra\ y\ celeste.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
     width: auto;
     height: auto;
 }
@@ -300,91 +248,65 @@ iframe {
 .dos{
     grid-area:  dos;
     background-image: url("../resourses/cambiador\ moño\ azulbco.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 
 .tres{
     grid-area:  tres;
     background-image: url("../resourses/ajuar\ verde\ forro\ bco.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 .cuatro {
     grid-area: cuatro;
     background-image: url("../resourses/almohada\ mateo.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 .cinco{
     grid-area: cinco;
     background-image: url("../resourses/borde\ cambiador\ carrusel.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 .seis{
     grid-area:  seis;
     background-image: url("../resourses/zfunicorniopeluche.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 .siete{
     grid-area:  siete;
     background-image: url("../resourses/peluches\ gatitos.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 .ocho{grid-area:  ocho;
     background-image: url("../resourses/peluche\ mia\ luna\ nube.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;                      
+    @extend .background-centrado;                      
 }
 .nueve{grid-area:  nueve;
     background-image: url("../resourses/peluche\ corazon.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
     
 }                                  
 .diez{grid-area:  diez;
     background-image: url("../resourses/zf3.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }                                 
 .once{grid-area:  once;
     background-image: url("../resourses/almohada\ roja\ milena.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 .doce{grid-area:  doce;
     background-image: url("../resourses/peluche\ caballito.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend .background-centrado;
 }
 
-/* grid index  */
+/* grid comida rapida  */
 
 .img__grid {
     display: grid;
-    grid-column: center;
-    width: 90vw;
-    height: 90vh;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr ;
-    
-    column-gap: 15px;
-    row-gap: 10px;
+    grid-template-columns:  1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(200px, auto);
 }
+
 .imagen__1 {
     width: 400px;
     height: 300px;
@@ -405,6 +327,122 @@ iframe {
     height:300px;
     grid-area: 2/2;
 }
+
+    /* main galeria grid zf */
+    .galeria_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(200px, auto);
+    }
+            .one {
+                grid-column: 1 / 2;
+                grid-row: 1;
+                background-image: url("../resourses/forro\ standartes.jpg");
+                @extend .background-centrado;
+                margin: 1rem;
+                padding: 1rem;
+            }
+            .two {
+                grid-column: 2 / 4;
+                grid-row: 1 / 3;
+                background-image: url("../resourses/almoha\ rosa\ cnombre.jpg");
+                @extend .background-centrado;
+                margin: 1rem;
+                padding: 1rem;
+                
+                
+            }
+            .three {
+                grid-column: 1;
+                grid-row: 2 / 5;
+                background-image: url("../resourses/ajuar\ full\ verde.jpg");
+                @extend .background-centrado;
+                margin: 1rem;
+                padding: 1rem;
+                
+            }
+            .four {
+                grid-column: 3;
+                grid-row: 3;
+                background-image: url("../resourses/forro\ animal.jpg");
+                @extend .background-centrado;
+                margin: 1rem;
+                padding: 1rem;
+                
+            }
+            .five {
+                grid-column: 2;
+                grid-row: 4;
+                background-image: url("../resourses/ajuar\ cambiador\ verde\ peluchito.jpg");
+                @extend .background-centrado;
+                margin: 1rem;
+                padding: 1rem;
+                
+            }
+            .six {
+                grid-column: 3;
+                grid-row: 4;
+                background-image: url("../resourses/almoh\ magali.jpg");
+                @extend .background-centrado;
+                margin: 1rem;
+                padding: 1rem;
+                
+            }  
+            .seven {
+                grid-column: 1 / 2;
+                grid-row: 1;
+                background-image: url("../resourses/cambiador\ accesorios.jpg");
+                @extend .background-centrado;
+                margin: 1rem;
+                padding: 1rem;
+            }
+            .eigth {
+                grid-column: 2 / 4;
+                grid-row: 1 / 3;
+                background-image: url("../resourses/cambiador\ moño\ azulbco.jpg");
+                @extend .background-centrado;
+                margin: 1rem;
+                padding: 1rem;
+                
+                
+            }
+            .nine {
+                grid-column: 1;
+                grid-row: 2 / 5;
+                background-image: url("../resourses/peluches\ gatitos.jpg");
+                @extend .background-centrado;
+                margin: 1rem;
+                padding: 1rem;
+                
+            }
+            .ten {
+                grid-column: 3;
+                grid-row: 3;
+                background-image: url("../resourses/peluche\ caballito.jpg");
+                @extend .background-centrado;
+                margin: 1rem;
+                padding: 1rem;
+                
+            }
+            .eleven {
+                grid-column: 2;
+                grid-row: 4;
+                background-image: url("../resourses/borde\ cambiador\ carrusel.jpg");
+                @extend .background-centrado;
+                margin: 1rem;
+                padding: 1rem;
+                
+            }
+            .twelve {
+                grid-column: 3;
+                grid-row: 4;
+                background-image: url("../resourses/zfunicorniopeluche.jpg");
+                @extend .background-centrado;
+                margin: 1rem;
+                padding: 1rem;
+                
+            }  
 
 
 

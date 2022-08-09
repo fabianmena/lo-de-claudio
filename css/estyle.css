@@ -112,6 +112,29 @@
   justify-items: center;
   align-items: center; }
 
+/* extend */
+.background-centrado, .un, .do, .tre, .cuatr, .cinc, .sei, .siet, .och, .nuev, .die, .onc, .doc, .uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho, .nueve, .diez, .once, .doce, .one, .two, .three, .four, .five, .six, .seven, .eigth, .nine, .ten, .eleven, .twelve {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+footer {
+  padding: 1em 0;
+  margin-top: auto; }
+
+.fut {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  color: #da2f8a; }
+
+.redes {
+  width: 25px; }
+
+/* color de letras */
+/* Estilo de fuentes */
 * {
   margin: 0px;
   /*margen ext*/
@@ -134,13 +157,6 @@ body {
   opacity: 0.9;
   padding-bottom: 3em; }
 
-footer {
-  padding: 1em 0;
-  margin-top: auto; }
-
-.redes {
-  width: 25px; }
-
 .cont__container {
   display: grid;
   width: 80vw;
@@ -160,18 +176,15 @@ footer {
 h1 {
   color: #e044e3;
   padding: 40px;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   text-align: center; }
-
-.h1__animation {
-  background-image: linear-gradient(white blue red); }
 
 h2 {
   color: #0feaee;
-  font-family: 'Sigmar One', cursive; }
+  font-family: "Audiowide", cursive; }
 
 h3 {
-  color: #0feaee; }
+  color: #6464e2; }
 
 .i {
   margin: 20px;
@@ -188,18 +201,20 @@ h3 {
   justify-content: center;
   flex-wrap: wrap; }
 
+/* aplicando anidacion a tarjeta descriptivas */
 .card {
+  display: flex;
   width: 250px;
   height: 80%;
   border: 1px solid darkgrey;
   flex-direction: column;
   align-items: center;
   margin: 20px; }
-  .card .card__img {
+  .card__img {
     width: 100%;
     height: 100%;
     margin-bottom: 20px; }
-  .card .card__info {
+  .card__info {
     width: 90%;
     text-align: center;
     line-height: 1.5;
@@ -227,14 +242,6 @@ iframe {
   color: #0feaee;
   text-decoration: none; }
 
-.fut {
-  display: inline-block;
-  margin: 20px;
-  padding: 20px;
-  align-items: center;
-  justify-content: space-between;
-  color: #da2f8a; }
-
 .productos__grid {
   display: grid;
   width: 95vw;
@@ -249,91 +256,56 @@ iframe {
   transform: scale(1.5, 1.5);
   transition: all 1s; }
 
+/* utilizamos @extends para mbackgrounds repetitivos */
 .un {
   grid-area: uno;
   background-image: url("../resourses/jug armas.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: auto;
   height: auto; }
 
 .do {
   grid-area: dos;
-  background-image: url("../resourses/jug autos.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/jug autos.jpg"); }
 
 .tre {
   grid-area: tres;
-  background-image: url("../resourses/jug cocinagde.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/jug cocinagde.jpg"); }
 
 .cuatr {
   grid-area: cuatro;
-  background-image: url("../resourses/jug colorear.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/jug colorear.jpg"); }
 
 .cinc {
   grid-area: cinco;
-  background-image: url("../resourses/jug de mesa.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/jug de mesa.jpg"); }
 
 .sei {
   grid-area: seis;
-  background-image: url("../resourses/jug dino.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/jug dino.jpg"); }
 
 .siet {
   grid-area: siete;
-  background-image: url("../resourses/jug doctora.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/jug doctora.jpg"); }
 
 .och {
   grid-area: ocho;
-  background-image: url("../resourses/jug pop it.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/jug pop it.jpg"); }
 
 .nuev {
   grid-area: nueve;
-  background-image: url("../resourses/jug maletin juliana.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/jug maletin juliana.jpg"); }
 
 .die {
   grid-area: diez;
-  background-image: url("../resourses/jug militar.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/jug militar.jpg"); }
 
 .onc {
   grid-area: once;
-  background-image: url("../resourses/jug muñecas.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/jug muñecas.jpg"); }
 
 .doc {
   grid-area: doce;
-  background-image: url("../resourses/jug naipes.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/jug naipes.jpg"); }
 
 /* galeria productos z-f */
 .productos__zeta {
@@ -353,99 +325,59 @@ iframe {
 .uno {
   grid-area: uno;
   background-image: url("../resourses/almohada negra y celeste.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: auto;
   height: auto; }
 
 .dos {
   grid-area: dos;
-  background-image: url("../resourses/cambiador moño azulbco.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/cambiador moño azulbco.jpg"); }
 
 .tres {
   grid-area: tres;
-  background-image: url("../resourses/ajuar verde forro bco.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/ajuar verde forro bco.jpg"); }
 
 .cuatro {
   grid-area: cuatro;
-  background-image: url("../resourses/almohada mateo.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/almohada mateo.jpg"); }
 
 .cinco {
   grid-area: cinco;
-  background-image: url("../resourses/borde cambiador carrusel.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/borde cambiador carrusel.jpg"); }
 
 .seis {
   grid-area: seis;
-  background-image: url("../resourses/zfunicorniopeluche.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/zfunicorniopeluche.jpg"); }
 
 .siete {
   grid-area: siete;
-  background-image: url("../resourses/peluches gatitos.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/peluches gatitos.jpg"); }
 
 .ocho {
   grid-area: ocho;
-  background-image: url("../resourses/peluche mia luna nube.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/peluche mia luna nube.jpg"); }
 
 .nueve {
   grid-area: nueve;
-  background-image: url("../resourses/peluche corazon.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/peluche corazon.jpg"); }
 
 .diez {
   grid-area: diez;
-  background-image: url("../resourses/zf3.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/zf3.jpg"); }
 
 .once {
   grid-area: once;
-  background-image: url("../resourses/almohada roja milena.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/almohada roja milena.jpg"); }
 
 .doce {
   grid-area: doce;
-  background-image: url("../resourses/peluche caballito.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/peluche caballito.jpg"); }
 
-/* grid index  */
+/* grid comida rapida  */
 .img__grid {
   display: grid;
-  grid-column: center;
-  width: 90vw;
-  height: 90vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 15px;
-  row-gap: 10px; }
+  grid-gap: 10px;
+  grid-auto-rows: minmax(200px, auto); }
 
 .imagen__1 {
   width: 400px;
@@ -466,3 +398,94 @@ iframe {
   width: 400px;
   height: 300px;
   grid-area: 2/2; }
+
+/* main galeria grid zf */
+.galeria_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(200px, auto); }
+
+.one {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  background-image: url("../resourses/forro standartes.jpg");
+  margin: 1rem;
+  padding: 1rem; }
+
+.two {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  background-image: url("../resourses/almoha rosa cnombre.jpg");
+  margin: 1rem;
+  padding: 1rem; }
+
+.three {
+  grid-column: 1;
+  grid-row: 2 / 5;
+  background-image: url("../resourses/ajuar full verde.jpg");
+  margin: 1rem;
+  padding: 1rem; }
+
+.four {
+  grid-column: 3;
+  grid-row: 3;
+  background-image: url("../resourses/forro animal.jpg");
+  margin: 1rem;
+  padding: 1rem; }
+
+.five {
+  grid-column: 2;
+  grid-row: 4;
+  background-image: url("../resourses/ajuar cambiador verde peluchito.jpg");
+  margin: 1rem;
+  padding: 1rem; }
+
+.six {
+  grid-column: 3;
+  grid-row: 4;
+  background-image: url("../resourses/almoh magali.jpg");
+  margin: 1rem;
+  padding: 1rem; }
+
+.seven {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  background-image: url("../resourses/cambiador accesorios.jpg");
+  margin: 1rem;
+  padding: 1rem; }
+
+.eigth {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  background-image: url("../resourses/cambiador moño azulbco.jpg");
+  margin: 1rem;
+  padding: 1rem; }
+
+.nine {
+  grid-column: 1;
+  grid-row: 2 / 5;
+  background-image: url("../resourses/peluches gatitos.jpg");
+  margin: 1rem;
+  padding: 1rem; }
+
+.ten {
+  grid-column: 3;
+  grid-row: 3;
+  background-image: url("../resourses/peluche caballito.jpg");
+  margin: 1rem;
+  padding: 1rem; }
+
+.eleven {
+  grid-column: 2;
+  grid-row: 4;
+  background-image: url("../resourses/borde cambiador carrusel.jpg");
+  margin: 1rem;
+  padding: 1rem; }
+
+.twelve {
+  grid-column: 3;
+  grid-row: 4;
+  background-image: url("../resourses/zfunicorniopeluche.jpg");
+  margin: 1rem;
+  padding: 1rem; }
