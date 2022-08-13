@@ -16,7 +16,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(black,blue);
+    background: linear-gradient(#3e2e61,#b6e3c2);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -107,7 +107,7 @@ h3{
             }
     }
 p{
-    color: rgb(224, 68, 227);
+    color: black;
     margin:0px;
     font-family: 'Audiowide', cursive; 
     text-align:justify;
@@ -123,15 +123,20 @@ p{
 
 iframe {
     display: flex;
-    width: 300px;
+    width: 400px;
     height: 300px;
-    border-color: rgb(48, 147, 223);
-    justify-content:space-between;
+    border-color: black;
+    justify-content:left;
+    margin: 1rem;
+    padding: 2rem;
 }
 
 .pagprin{
-    color: rgb(15, 234, 238);
+    display: flex;
+    color: black;
     text-decoration: none;
+    justify-content: end;
+
 }
 
 
