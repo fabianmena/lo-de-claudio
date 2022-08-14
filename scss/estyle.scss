@@ -16,7 +16,8 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(#3e2e61,#b6e3c2);
+    background: linear-gradient(#3e2e61,#b6e3c2,); 
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -51,7 +52,7 @@ body{
 h1 {
     color: $colorh1 ;
     padding: 40px;
-    font-family: $font-titulos; 
+    font-family: $font-secundario; 
     text-align: center;
     }
 
@@ -109,9 +110,9 @@ h3{
 p{
     color: black;
     margin:0px;
-    font-family: 'Audiowide', cursive; 
+    font-family: 'DynaPuff', cursive;; 
     text-align:justify;
-    padding: 30px;
+    padding: 10px;
 
 }
 
@@ -310,27 +311,40 @@ iframe {
     grid-template-columns:  1fr 1fr;
     grid-gap: 10px;
     grid-auto-rows: minmax(200px, auto);
+    ;
 }
 
 .imagen__1 {
     width: 400px;
     height: 300px;
     grid-area: 1/1;
+    margin: 10px;
+    justify-items: center;
+    border:solid rgb(74, 89, 68)
 }
 .imagen__2 {
     width: 400px;
     height: 300px;
     grid-area: 1/2;
+    margin: 10px;
+    justify-items: center; 
+    border: solid rgb(74, 89, 68)
 }
 .imagen__3 {
     width: 400px;
     height: 300px;
     grid-area: 2/1;
+    margin: 10px;
+    justify-items: center; 
+    border: solid rgb(74, 89, 68)
 }
 .imagen__4 {
     width: 400px;
     height:300px;
     grid-area: 2/2;
+    margin: 10px;
+    justify-items: center; 
+    border: solid rgb(74, 89, 68)
 }
 
     /* main galeria grid zf */

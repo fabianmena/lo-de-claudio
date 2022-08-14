@@ -179,7 +179,7 @@ body {
 h1 {
   color: black;
   padding: 40px;
-  font-family: "Audiowide", cursive;
+  font-family: "DynaPuff", cursive;
   text-align: center; }
 
 h2 {
@@ -226,9 +226,9 @@ h3 {
 p {
   color: black;
   margin: 0px;
-  font-family: 'Audiowide', cursive;
+  font-family: 'DynaPuff', cursive;
   text-align: justify;
-  padding: 30px; }
+  padding: 10px; }
 
 .parrafo__historia {
   font-family: 'Audiowide', cursive;
@@ -389,22 +389,34 @@ iframe {
 .imagen__1 {
   width: 400px;
   height: 300px;
-  grid-area: 1/1; }
+  grid-area: 1/1;
+  margin: 10px;
+  justify-items: center;
+  border: solid #4a5944; }
 
 .imagen__2 {
   width: 400px;
   height: 300px;
-  grid-area: 1/2; }
+  grid-area: 1/2;
+  margin: 10px;
+  justify-items: center;
+  border: solid #4a5944; }
 
 .imagen__3 {
   width: 400px;
   height: 300px;
-  grid-area: 2/1; }
+  grid-area: 2/1;
+  margin: 10px;
+  justify-items: center;
+  border: solid #4a5944; }
 
 .imagen__4 {
   width: 400px;
   height: 300px;
-  grid-area: 2/2; }
+  grid-area: 2/2;
+  margin: 10px;
+  justify-items: center;
+  border: solid #4a5944; }
 
 /* main galeria grid zf */
 .galeria_grid {
