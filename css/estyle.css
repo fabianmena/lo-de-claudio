@@ -133,6 +133,65 @@ footer {
 .redes {
   width: 25px; }
 
+.pie-pagina {
+  width: 100%;
+  background-color: #b9f2cd; }
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px; }
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 90px; }
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #80add4;
+  margin-bottom: 25px;
+  font-size: 20px; }
+
+.pie-pagina .grupo-1 .box p {
+  color: #964646;
+  margin-bottom: 10px; }
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #e4ece4;
+  margin-right: 10px;
+  background-color: #112f07;
+  text-align: center;
+  transition: all 300ms ease; }
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua; }
+
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 5px 10px;
+  text-align: center;
+  color: white; }
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
+
 /* color de letras */
 /* titulos */
 /* contenido */
@@ -187,7 +246,7 @@ h2 {
   font-family: "Audiowide", cursive; }
 
 h3 {
-  color: black; }
+  font-family: "DynaPuff", cursive; }
 
 .i {
   margin: 20px;
@@ -212,11 +271,14 @@ h3 {
   border: 1px solid darkgrey;
   flex-direction: column;
   align-items: center;
-  margin: 20px; }
+  margin: 20px;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
   .card__img {
     width: 100%;
     height: 100%;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border-radius: 10px; }
   .card__info {
     width: 90%;
     text-align: center;
@@ -231,7 +293,7 @@ p {
   padding: 10px; }
 
 .parrafo__historia {
-  font-family: 'Audiowide', cursive;
+  font-family: 'DynaPuff', cursive;
   text-decoration-style: dashed; }
 
 iframe {
@@ -268,51 +330,75 @@ iframe {
   grid-area: uno;
   background-image: url("../resourses/jug armas.jpg");
   width: auto;
-  height: auto; }
+  height: auto;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .do {
   grid-area: dos;
-  background-image: url("../resourses/jug autos.jpg"); }
+  background-image: url("../resourses/jug autos.jpg");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .tre {
   grid-area: tres;
-  background-image: url("../resourses/jug cocinagde.jpg"); }
+  background-image: url("../resourses/jug cocinagde.jpg");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .cuatr {
   grid-area: cuatro;
-  background-image: url("../resourses/jug colorear.jpg"); }
+  background-image: url("../resourses/jug colorear.jpg");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .cinc {
   grid-area: cinco;
-  background-image: url("../resourses/jug de mesa.jpg"); }
+  background-image: url("../resourses/jug de mesa.jpg");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .sei {
   grid-area: seis;
-  background-image: url("../resourses/jug dino.jpg"); }
+  background-image: url("../resourses/jug dino.jpg");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .siet {
   grid-area: siete;
-  background-image: url("../resourses/jug doctora.jpg"); }
+  background-image: url("../resourses/jug doctora.jpg");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .och {
   grid-area: ocho;
-  background-image: url("../resourses/jug pop it.jpg"); }
+  background-image: url("../resourses/jug pop it.jpg");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .nuev {
   grid-area: nueve;
-  background-image: url("../resourses/jug maletin juliana.jpg"); }
+  background-image: url("../resourses/jug maletin juliana.jpg");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .die {
   grid-area: diez;
-  background-image: url("../resourses/jug militar.jpg"); }
+  background-image: url("../resourses/jug militar.jpg");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .onc {
   grid-area: once;
-  background-image: url("../resourses/jug muñecas.jpg"); }
+  background-image: url("../resourses/jug muñecas.jpg");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .doc {
   grid-area: doce;
-  background-image: url("../resourses/jug naipes.jpg"); }
+  background-image: url("../resourses/jug naipes.jpg");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 /* galeria productos z-f */
 .productos__zeta {
@@ -430,81 +516,117 @@ iframe {
   grid-row: 1;
   background-image: url("../resourses/forro standartes.jpg");
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: solid #121239;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .two {
   grid-column: 2 / 4;
   grid-row: 1 / 3;
   background-image: url("../resourses/almoha rosa cnombre.jpg");
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: solid #131316;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .three {
   grid-column: 1;
   grid-row: 2 / 5;
   background-image: url("../resourses/ajuar full verde.jpg");
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: solid #131316;
+  box-shadow: 5px 5px 10px;
+  border-radius: 20px; }
 
 .four {
   grid-column: 3;
-  grid-row: 3;
+  grid-row: 3 / 3;
   background-image: url("../resourses/forro animal.jpg");
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: solid #131316;
+  box-shadow: 5px 5px 10px;
+  border-radius: 20px; }
 
 .five {
   grid-column: 2;
-  grid-row: 4;
+  grid-row: 3 / 5;
   background-image: url("../resourses/ajuar cambiador verde peluchito.jpg");
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: solid #131316;
+  box-shadow: 5px 5px 10px;
+  border-radius: 20px; }
 
 .six {
   grid-column: 3;
   grid-row: 4;
   background-image: url("../resourses/almoh magali.jpg");
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: solid #131316;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .seven {
   grid-column: 1 / 2;
   grid-row: 1;
   background-image: url("../resourses/cambiador accesorios.jpg");
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: solid #131316;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .eigth {
   grid-column: 2 / 4;
   grid-row: 1 / 3;
   background-image: url("../resourses/cambiador moño azulbco.jpg");
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: solid #131316;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .nine {
   grid-column: 1;
   grid-row: 2 / 5;
   background-image: url("../resourses/peluches gatitos.jpg");
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: solid #131316;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .ten {
   grid-column: 3;
   grid-row: 3;
   background-image: url("../resourses/peluche caballito.jpg");
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: solid #131316;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .eleven {
   grid-column: 2;
-  grid-row: 4;
+  grid-row: 3/ 5;
   background-image: url("../resourses/borde cambiador carrusel.jpg");
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: solid #131316;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .twelve {
   grid-column: 3;
   grid-row: 4;
   background-image: url("../resourses/zfunicorniopeluche.jpg");
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: solid #131316;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
