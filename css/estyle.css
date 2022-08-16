@@ -93,7 +93,7 @@
     flex-basis: 100%;
     flex-direction: column; } }
 
-/* responsive productos zf y comida rapida html */
+/* responsive productos zf  */
 .zf__container {
   margin: 10px;
   padding: 80px;
@@ -111,6 +111,14 @@
   justify-content: center;
   justify-items: center;
   align-items: center; }
+
+/* responsive comida rapida -rotiseria */
+@media (min-width: 320px) and (max-width: 575px) {
+  .img__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto); } }
 
 /* extend */
 .background-centrado, .un, .do, .tre, .cuatr, .cinc, .sei, .siet, .och, .nuev, .die, .onc, .doc, .uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho, .nueve, .diez, .once, .doce, .one, .two, .three, .four, .five, .six, .seven, .eigth, .nine, .ten, .eleven, .twelve {
@@ -135,7 +143,7 @@ footer {
 
 .pie-pagina {
   width: 100%;
-  background-color: #b9f2cd; }
+  background-color: #110c0e; }
 
 .pie-pagina .grupo-1 {
   width: 100%;
@@ -157,12 +165,12 @@ footer {
   width: 90px; }
 
 .pie-pagina .grupo-1 .box h2 {
-  color: #80add4;
+  color: #d48086;
   margin-bottom: 25px;
   font-size: 20px; }
 
 .pie-pagina .grupo-1 .box p {
-  color: #964646;
+  color: #d9d4d4;
   margin-bottom: 10px; }
 
 .pie-pagina .grupo-1 .red-social a {
@@ -172,15 +180,15 @@ footer {
   line-height: 45px;
   color: #e4ece4;
   margin-right: 10px;
-  background-color: #112f07;
+  background-color: #eb0c17;
   text-align: center;
   transition: all 300ms ease; }
 
 .pie-pagina .grupo-1 .red-social a:hover {
-  color: aqua; }
+  color: #2c0beb; }
 
 .pie-pagina .grupo-2 {
-  background-color: #0a1a2a;
+  background-color: #45304e;
   padding: 5px 10px;
   text-align: center;
   color: white; }

@@ -100,7 +100,7 @@
             }
         }
         
-         /* responsive productos zf y comida rapida html */
+         /* responsive productos zf  */
         
         .zf__container{
             margin: 10px;
@@ -123,5 +123,13 @@
             justify-items: center;
             align-items: center;
         }
-
-        
+/* responsive comida rapida -rotiseria */
+@media  (min-width: 320px)  and (max-width: 575px){
+.img__grid {
+    display: grid;
+    grid-template-columns:   1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    
+}
+        }
