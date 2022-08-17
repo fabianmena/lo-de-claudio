@@ -482,13 +482,12 @@ iframe {
     background-size: cover;
     background-repeat: no-repeat;
     border: #161716 solid 10px;
-} */
+} 
 
 .fastgrid {
     display: grid;
     gap: 10px;
     grid-template-columns:repeat(auto-fit,minmax(150p, 1fr)) ;
-    position: relative;
 
 }
 .roti1 {
@@ -534,6 +533,78 @@ iframe {
     display: flex;
     justify-content: center;
     background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
+}*/
+.fastgrid{
+    display: grid;
+    width: 95vw;
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:    2fr 2fr 2fr 2fr   ;
+    grid-template-areas:"uno     dos    tres"
+                        "cuatro  cinco  seis"
+                        "siete   ocho  nueve"
+                        "diez  once  doce" ;
+                        column-gap: 20px;
+                        row-gap: 10px;
+                    
+}
+.fastgrid :hover{
+    transform: scale( 1.5 ,  1.5 );
+    transition: all 3s;
+}
+                /* utilizamos @extends para mbackgrounds repetitivos */
+.roti1{
+    grid-area:  uno;
+    background-image: url("../resourses/png.jug pop it.png");
+    @extend .background-centrado;
+    width: auto;
+    height: auto;
+    box-shadow: 5px 5px 10px;
+    border-radius: 10px;
+}
+
+.roti2{
+    grid-area:  dos;
+    background-image: url("../resourses/png.jug peluches.png");
+    @extend .background-centrado;
+    box-shadow: 5px 5px 10px;
+    border-radius: 10px;
+}
+
+.roti3{
+    grid-area:  tres ;
+    background-image: url("../resourses/png.jug muñecas.png");
+    @extend .background-centrado;
+    box-shadow: 5px 5px 10px;
+    border-radius: 10px;
+}
+.roti4 {
+    grid-area: cuatro;
+    background-image: url("../resourses/png.jug doctora.png");
+    @extend .background-centrado;
+    box-shadow: 5px 5px 10px;
+    border-radius: 10px;
+}
+.roti5{
+    grid-area: cinco;
+    background-image: url("../resourses/png.jug dino.png");
+    @extend .background-centrado;
+    box-shadow: 5px 5px 10px;
+    border-radius: 10px;
+}
+.roti6{
+    grid-area:  seis;
+    background-image: url("../resourses/png.jug de mesa.png");
+    @extend .background-centrado;
+    box-shadow: 5px 5px 10px;
+    border-radius: 10px;
+}
+.roti7{
+    grid-area:  siete;
+    background-image: url("../resourses/png.jug colorear.png");
+    @extend .background-centrado;
+    box-shadow: 5px 5px 10px;
+    border-radius: 10px;
 }
 
 

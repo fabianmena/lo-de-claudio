@@ -113,7 +113,7 @@
   align-items: center; }
 
 /* extend */
-.background-centrado, .un, .do, .tre, .cuatr, .cinc, .sei, .siet, .och, .nuev, .die, .onc, .doc, .one, .two, .three, .four, .five, .six, .seven, .eigth, .nine, .ten, .eleven, .twelve {
+.background-centrado, .un, .do, .tre, .cuatr, .cinc, .sei, .siet, .och, .nuev, .die, .onc, .doc, .one, .two, .three, .four, .five, .six, .seven, .eigth, .nine, .ten, .eleven, .twelve, .roti1, .roti2, .roti3, .roti4, .roti5, .roti6, .roti7 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -606,51 +606,113 @@ iframe {
     background-size: cover;
     background-repeat: no-repeat;
     border: #161716 solid 10px;
-} */
+} 
+
+.fastgrid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns:repeat(auto-fit,minmax(150p, 1fr)) ;
+
+}
+.roti1 {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.chedarrayado - copia.png");
+
+}
+.roti2 {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
+}
+.roti3 {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.milanesa con papa big.png");
+
+}
+.roti4{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.piza morron.png");
+}
+.roti5{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
+}
+.roti6{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
+}
+.roti7{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
+}*/
 .fastgrid {
   display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(150p, 1fr));
-  position: relative; }
+  width: 95vw;
+  height: 95vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr;
+  grid-template-areas: "uno     dos    tres" "cuatro  cinco  seis" "siete   ocho  nueve" "diez  once  doce";
+  column-gap: 20px;
+  row-gap: 10px; }
 
+.fastgrid :hover {
+  transform: scale(1.5, 1.5);
+  transition: all 3s; }
+
+/* utilizamos @extends para mbackgrounds repetitivos */
 .roti1 {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  background-image: url("../resourses/png.chedarrayado - copia.png"); }
+  grid-area: uno;
+  background-image: url("../resourses/png.jug pop it.png");
+  width: auto;
+  height: auto;
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .roti2 {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  background-image: url("../resourses/png.pizza con pelotitas de cheddar.png"); }
+  grid-area: dos;
+  background-image: url("../resourses/png.jug peluches.png");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .roti3 {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  background-image: url("../resourses/png.milanesa con papa big.png"); }
+  grid-area: tres;
+  background-image: url("../resourses/png.jug muñecas.png");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .roti4 {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  background-image: url("../resourses/png.piza morron.png"); }
+  grid-area: cuatro;
+  background-image: url("../resourses/png.jug doctora.png");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .roti5 {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  background-image: url("../resourses/png.pizza con pelotitas de cheddar.png"); }
+  grid-area: cinco;
+  background-image: url("../resourses/png.jug dino.png");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .roti6 {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  background-image: url("../resourses/png.pizza con pelotitas de cheddar.png"); }
+  grid-area: seis;
+  background-image: url("../resourses/png.jug de mesa.png");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
 
 .roti7 {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  background-image: url("../resourses/png.pizza con pelotitas de cheddar.png"); }
+  grid-area: siete;
+  background-image: url("../resourses/png.jug colorear.png");
+  box-shadow: 5px 5px 10px;
+  border-radius: 10px; }
