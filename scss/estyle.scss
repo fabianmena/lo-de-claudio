@@ -150,7 +150,7 @@ iframe {
     width: 95vw;
     height: 95vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:    1fr 1fr 1fr 1fr   ;
+    grid-template-rows:    2fr 2fr 2fr 2fr   ;
     grid-template-areas:"uno     dos    tres"
                         "cuatro  cinco  seis"
                         "siete   ocho  nueve"
@@ -161,12 +161,12 @@ iframe {
 }
 .productos__grid :hover{
     transform: scale( 1.5 ,  1.5 );
-    transition: all 1s;
+    transition: all 3s;
 }
                 /* utilizamos @extends para mbackgrounds repetitivos */
 .un{
     grid-area:  uno;
-    background-image: url("../resourses/jug\ armas.jpg");
+    background-image: url("../resourses/png.jug pop it.png");
     @extend .background-centrado;
     width: auto;
     height: auto;
@@ -176,7 +176,7 @@ iframe {
 
 .do{
     grid-area:  dos;
-    background-image: url("../resourses/jug\ autos.jpg");
+    background-image: url("../resourses/png.jug peluches.png");
     @extend .background-centrado;
     box-shadow: 5px 5px 10px;
     border-radius: 10px;
@@ -184,340 +184,356 @@ iframe {
 
 .tre{
     grid-area:  tres ;
-    background-image: url("../resourses/jug\ cocinagde.jpg");
+    background-image: url("../resourses/png.jug muñecas.png");
     @extend .background-centrado;
     box-shadow: 5px 5px 10px;
     border-radius: 10px;
 }
 .cuatr {
     grid-area: cuatro;
-    background-image: url("../resourses/jug\ colorear.jpg");
+    background-image: url("../resourses/png.jug doctora.png");
     @extend .background-centrado;
     box-shadow: 5px 5px 10px;
     border-radius: 10px;
 }
 .cinc{
     grid-area: cinco;
-    background-image: url("../resourses/jug\ de\ mesa.jpg");
+    background-image: url("../resourses/png.jug dino.png");
     @extend .background-centrado;
     box-shadow: 5px 5px 10px;
     border-radius: 10px;
 }
 .sei{
     grid-area:  seis;
-    background-image: url("../resourses/jug\ dino.jpg");
+    background-image: url("../resourses/png.jug de mesa.png");
     @extend .background-centrado;
     box-shadow: 5px 5px 10px;
     border-radius: 10px;
 }
 .siet{
     grid-area:  siete;
-    background-image: url("../resourses/jug\ doctora.jpg");
+    background-image: url("../resourses/png.jug colorear.png");
     @extend .background-centrado;
     box-shadow: 5px 5px 10px;
     border-radius: 10px;
 }
 .och{grid-area:  ocho;
-    background-image: url("../resourses/jug\ pop\ it.jpg");
+    background-image: url("../resourses/png.jug autos.png");
     @extend .background-centrado;  
     box-shadow: 5px 5px 10px;
     border-radius: 10px;                 
 }
 .nuev{grid-area:  nueve;
-    background-image: url("../resourses/jug\ maletin\ juliana.jpg");
+    background-image: url("../resourses/png.jug armas.png");
     @extend .background-centrado;
     box-shadow: 5px 5px 10px;
     border-radius: 10px;
 }                                  
 .die{grid-area:  diez;
-    background-image: url("../resourses/jug\ militar.jpg");
+    background-image: url("../resourses/juguetes.jpg");
     @extend .background-centrado;
     box-shadow: 5px 5px 10px;
     border-radius: 10px;
 }                                 
 .onc{grid-area:  once;
-    background-image: url("../resourses/jug\ muñecas.jpg");
+    background-image: url("../resourses/png.jug patin.png");
     @extend .background-centrado;
     box-shadow: 5px 5px 10px;
     border-radius: 10px;
 }
 .doc{grid-area:  doce;
-    background-image: url("../resourses/jug\ naipes.jpg");
+    background-image: url("../resourses/png.jug pelotaypaleta.png");
     @extend .background-centrado;
     box-shadow: 5px 5px 10px;
     border-radius: 10px;
 }
-
-
-/* galeria productos z-f */
-
-.productos__zeta{
-    display: grid;
-    width: 95vw;
-    height: 95vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:    1fr 1fr 1fr 1fr   ;
-    grid-template-areas:"uno    dos   tres"
-                        "cuatro  cinco  seis"
-                        "siete   ocho  nueve"
-                        "diez  once  doce" ;
-                        column-gap: 20px;
-                        row-gap: 10px;
-                    
-                    
-}
-.productos__zeta :hover{
-    transform: scale( 1.5 ,  1.5 );
-    transition: all 1s;
-}
-
-.uno{
-    grid-area:  uno;
-    background-image: url("../resourses/almohada\ negra\ y\ celeste.jpg");
-    @extend .background-centrado;
-    width: auto;
-    height: auto;
-}
-
-.dos{
-    grid-area:  dos;
-    background-image: url("../resourses/cambiador\ moño\ azulbco.jpg");
-    @extend .background-centrado;
-}
-
-.tres{
-    grid-area:  tres;
-    background-image: url("../resourses/ajuar\ verde\ forro\ bco.jpg");
-    @extend .background-centrado;
-}
-.cuatro {
-    grid-area: cuatro;
-    background-image: url("../resourses/almohada\ mateo.jpg");
-    @extend .background-centrado;
-}
-.cinco{
-    grid-area: cinco;
-    background-image: url("../resourses/borde\ cambiador\ carrusel.jpg");
-    @extend .background-centrado;
-}
-.seis{
-    grid-area:  seis;
-    background-image: url("../resourses/zfunicorniopeluche.jpg");
-    @extend .background-centrado;
-}
-.siete{
-    grid-area:  siete;
-    background-image: url("../resourses/peluches\ gatitos.jpg");
-    @extend .background-centrado;
-}
-.ocho{grid-area:  ocho;
-    background-image: url("../resourses/peluche\ mia\ luna\ nube.jpg");
-    @extend .background-centrado;                      
-}
-.nueve{grid-area:  nueve;
-    background-image: url("../resourses/peluche\ corazon.jpg");
-    @extend .background-centrado;
+.img__flex{
+    display: flex;
+    flex-direction: column;
     
-}                                  
-.diez{grid-area:  diez;
-    background-image: url("../resourses/zf3.jpg");
-    @extend .background-centrado;
-}                                 
-.once{grid-area:  once;
-    background-image: url("../resourses/almohada\ roja\ milena.jpg");
-    @extend .background-centrado;
-}
-.doce{grid-area:  doce;
-    background-image: url("../resourses/peluche\ caballito.jpg");
-    @extend .background-centrado;
+    
+
 }
 
-/* grid comida rapida  */
 
-.img__grid {
-    display: grid;
-    grid-template-columns:  1fr 1fr;
-    grid-gap: 10px;
-    grid-auto-rows: minmax(200px, auto);
-    ;
-}
 
-.imagen__1 {
-    width: 400px;
-    height: 300px;
-    grid-area: 1/1;
-    margin: 10px;
-    justify-items: center;
-    border:solid rgb(74, 89, 68)
-}
-.imagen__2 {
-    width: 400px;
-    height: 300px;
-    grid-area: 1/2;
-    margin: 10px;
-    justify-items: center; 
-    border: solid rgb(74, 89, 68)
-}
-.imagen__3 {
-    width: 400px;
-    height: 300px;
-    grid-area: 2/1;
-    margin: 10px;
-    justify-items: center; 
-    border: solid rgb(74, 89, 68)
-}
-.imagen__4 {
-    width: 400px;
-    height:300px;
-    grid-area: 2/2;
-    margin: 10px;
-    justify-items: center; 
-    border: solid rgb(74, 89, 68)
-}
+
+
+
+
+
+
+
 
     /* main galeria grid zf */
-    .galeria_grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-        grid-auto-rows: minmax(200px, auto);
-    }
-            .one {
-                grid-column: 1 / 2;
-                grid-row: 1;
-                background-image: url("../resourses/forro\ standartes.jpg");
-                @extend .background-centrado;
-                margin: 1rem;
-                padding: 1rem;
-                border: solid rgb(18, 18, 57);
-                box-shadow: 5px 5px 10px;
-                border-radius: 10px;
+            .galeria_grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10px;
+                grid-auto-rows: minmax(200px, auto);
             }
-            .two {
-                grid-column: 2 / 4;
-                grid-row: 1 / 3;
-                background-image: url("../resourses/almoha\ rosa\ cnombre.jpg");
-                @extend .background-centrado;
-                margin: 1rem;
-                padding: 1rem;
-                border: solid rgb(19, 19, 22);
-                box-shadow: 5px 5px 10px;
-                border-radius: 10px;
-                
-            }
-            .three {
-                grid-column: 1;
-                grid-row: 2 / 5;
-                background-image: url("../resourses/ajuar\ full\ verde.jpg");
-                @extend .background-centrado;
-                margin: 1rem;
-                padding: 1rem;
-                border: solid rgb(19, 19, 22);
-                box-shadow: 5px 5px 10px;
-                border-radius: 20px;
-            }
-            .four {
-                grid-column: 3;
-                grid-row: 3 / 3;
-                background-image: url("../resourses/forro\ animal.jpg");
-                @extend .background-centrado;
-                margin: 1rem;
-                padding: 1rem;
-                border: solid rgb(19, 19, 22);
-                box-shadow: 5px 5px 10px;
-                border-radius: 20px;
-            }
-            .five {
-                grid-column: 2;
-                grid-row: 3 / 5;
-                background-image: url("../resourses/ajuar\ cambiador\ verde\ peluchito.jpg");
-                @extend .background-centrado;
-                margin: 1rem;
-                padding: 1rem;
-                border: solid rgb(19, 19, 22);
-                box-shadow: 5px 5px 10px;
-                border-radius: 20px;
-            }
-            .six {
-                grid-column: 3;
-                grid-row: 4;
-                background-image: url("../resourses/almoh\ magali.jpg");
-                @extend .background-centrado;
-                margin: 1rem;
-                padding: 1rem;
-                border: solid rgb(19, 19, 22);
-                box-shadow: 5px 5px 10px;
-                border-radius: 10px;
-            }  
-            .seven {
-                grid-column: 1 / 2;
-                grid-row: 1;
-                background-image: url("../resourses/cambiador\ accesorios.jpg");
-                @extend .background-centrado;
-                margin: 1rem;
-                padding: 1rem;
-                border: solid rgb(19, 19, 22);
-                box-shadow: 5px 5px 10px;
-                border-radius: 10px;
-            }
-            .eigth {
-                grid-column: 2 / 4;
-                grid-row: 1 / 3;
-                background-image: url("../resourses/cambiador\ moño\ azulbco.jpg");
-                @extend .background-centrado;
-                margin: 1rem;
-                padding: 1rem;
-                border: solid rgb(19, 19, 22);
-                box-shadow: 5px 5px 10px;
-                border-radius: 10px;
-                
-            }
-            .nine {
-                grid-column: 1;
-                grid-row: 2 / 5;
-                background-image: url("../resourses/peluches\ gatitos.jpg");
-                @extend .background-centrado;
-                margin: 1rem;
-                padding: 1rem;
-                border: solid rgb(19, 19, 22);
-                box-shadow: 5px 5px 10px;
-                border-radius: 10px;
-            }
-            .ten {
-                grid-column: 3;
-                grid-row: 3;
-                background-image: url("../resourses/peluche\ caballito.jpg");
-                @extend .background-centrado;
-                margin: 1rem;
-                padding: 1rem;
-                border: solid rgb(19, 19, 22);
-                box-shadow: 5px 5px 10px;
-                border-radius: 10px;
-            }
-            .eleven {
-                grid-column: 2;
-                grid-row: 3/ 5 ;
-                background-image: url("../resourses/borde\ cambiador\ carrusel.jpg");
-                @extend .background-centrado;
-                margin: 1rem;
-                padding: 1rem;
-                border: solid rgb(19, 19, 22);
-                box-shadow: 5px 5px 10px;
-                border-radius: 10px;
-            }
-            .twelve {
-                grid-column: 3;
-                grid-row: 4;
-                background-image: url("../resourses/zfunicorniopeluche.jpg");
-                @extend .background-centrado;
-                margin: 1rem;
-                padding: 1rem;
-                border: solid rgb(19, 19, 22);
-                box-shadow: 5px 5px 10px;
-                border-radius: 10px;
-            }  
+                    .one {
+                        grid-column: 1 / 2;
+                        grid-row: 1;
+                        background-image: url("../resourses/acolchadovintage - copia.jpg");
+                        @extend .background-centrado;
+                        margin: 1rem;
+                        padding: 1rem;
+                        border: solid rgb(18, 18, 57);
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
+                    .two {
+                        grid-column: 2 / 4;
+                        grid-row: 1 / 3;
+                        background-image:url("../resourses/almohada negra y celeste - copia.jpg");
+                        @extend .background-centrado;
+                        margin: 1rem;
+                        padding: 1rem;
+                        border: solid rgb(19, 19, 22);
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                        
+                    }
+                    .three {
+                        grid-column: 1;
+                        grid-row: 2 / 5;
+                        background-image:  url("../resourses/png.peluches gatitos.png");
+                        @extend .background-centrado;
+                        margin: 1rem;
+                        padding: 1rem;
+                        border: solid rgb(19, 19, 22);
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 20px;
+                    }
+                    .four {
+                        grid-column: 3;
+                        grid-row: 3 / 3;
+                        background-image: url("../resourses/almohada roja milena - copia.jpg");
+                        @extend .background-centrado;
+                        margin: 1rem;
+                        padding: 1rem;
+                        border: solid rgb(19, 19, 22);
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 20px;
+                    }
+                    .five {
+                        grid-column: 2;
+                        grid-row: 3 / 5;
+                        background-image: url("../resourses/ajuar\ cambiador\ verde\ peluchito.jpg");
+                        @extend .background-centrado;
+                        margin: 1rem;
+                        padding: 1rem;
+                        border: solid rgb(19, 19, 22);
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 20px;
+                    }
+                    .six {
+                        grid-column: 3;
+                        grid-row: 4;
+                        background-image: url("../resourses/almoh\ magali.jpg");
+                        @extend .background-centrado;
+                        margin: 1rem;
+                        padding: 1rem;
+                        border: solid rgb(19, 19, 22);
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }  
+                    .seven {
+                        grid-column: 1 / 2;
+                        grid-row: 1;
+                        background-image: url("../resourses/cambiador\ accesorios.jpg");
+                        @extend .background-centrado;
+                        margin: 1rem;
+                        padding: 1rem;
+                        border: solid rgb(19, 19, 22);
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
+                    .eigth {
+                        grid-column: 2 / 4;
+                        grid-row: 1 / 3;
+                        background-image: url("../resourses/cambiador\ moño\ azulbco.jpg");
+                        @extend .background-centrado;
+                        margin: 1rem;
+                        padding: 1rem;
+                        border: solid rgb(19, 19, 22);
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                        
+                    }
+                    .nine {
+                        grid-column: 1;
+                        grid-row: 2 / 5;
+                        background-image: url("../resourses/peluches\ gatitos.jpg");
+                        @extend .background-centrado;
+                        margin: 1rem;
+                        padding: 1rem;
+                        border: solid rgb(19, 19, 22);
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
+                    .ten {
+                        grid-column: 3;
+                        grid-row: 3;
+                        background-image: url("../resourses/peluche\ caballito.jpg");
+                        @extend .background-centrado;
+                        margin: 1rem;
+                        padding: 1rem;
+                        border: solid rgb(19, 19, 22);
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
+                    .eleven {
+                        grid-column: 2;
+                        grid-row: 3/ 5 ;
+                        background-image: url("../resourses/borde\ cambiador\ carrusel.jpg");
+                        @extend .background-centrado;
+                        margin: 1rem;
+                        padding: 1rem;
+                        border: solid rgb(19, 19, 22);
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
+                    .twelve {
+                        grid-column: 3;
+                        grid-row: 4;
+                        background-image: url("../resourses/zfunicorniopeluche.jpg");
+                        @extend .background-centrado;
+                        margin: 1rem;
+                        padding: 1rem;
+                        border: solid rgb(19, 19, 22);
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }  
+
+/* grid comida rapida  */
+/*  
+.fastgrid{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:    1fr 1fr 1fr;
+    grid-template-areas:"lana1 lana10 lana6"
+                        "lana1 lana4 lana2 "
+                        "lana3 lana4 lana5";
+    flex-wrap: wrap;
+                        
+}
+
+.roti1{
+    grid-area: lana1;
+    background-image: url("../resourses/png.chedarrayado - copia.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: #161716 solid 10px;
+}
+.roti2{
+    grid-area: lana10;
+    display: flex;
+    color: bisque;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: #161716 solid 10px;
+}
+.roti3{
+    grid-area: lana2;
+    background-image: url("../resourses/png.pizza bacon.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: #161716 solid 10px;
+}
+.roti4{
+    grid-area: lana3;
+    background-image: url("../resourses/png.piza morron.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: #161716 solid 10px;
+}
+.roti5{
+    grid-area: lana4;
+    background-image: url("../resourses/png.chedar.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: #161716 solid 10px;
+}
+.roti6{
+    grid-area: lana5;
+    background-image: url("../resourses/png.papas chedar casera.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: #161716 solid 10px;
+}
+.roti7{
+    grid-area: lana6;
+    background-image: url("../resourses/png.milanesa con papa big.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: #161716 solid 10px;
+} */
+
+.fastgrid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns:repeat(auto-fit,minmax(150p, 1fr)) ;
+
+}
+.roti1 {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.chedarrayado - copia.png");
+
+}
+.roti2 {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
+}
+.roti3 {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.milanesa con papa big.png");
+
+}
+.roti4{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.piza morron.png");
+}
+.roti5{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
+}
+.roti6{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
+}
+.roti7{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
+}
 
 
-
-
-
+    
