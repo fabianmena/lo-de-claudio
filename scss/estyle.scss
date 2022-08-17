@@ -488,6 +488,7 @@ iframe {
     display: grid;
     gap: 10px;
     grid-template-columns:repeat(auto-fit,minmax(150p, 1fr)) ;
+    position: relative;
 
 }
 .roti1 {

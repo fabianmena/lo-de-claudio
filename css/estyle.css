@@ -610,7 +610,8 @@ iframe {
 .fastgrid {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(150p, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(150p, 1fr));
+  position: relative; }
 
 .roti1 {
   height: 300px;
