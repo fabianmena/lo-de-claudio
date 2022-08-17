@@ -19,6 +19,7 @@ footer{
 .pie-pagina{
     width: 100%;
     background-color: #110c0e;
+    margin: 10px;
 
 }
 .pie-pagina .grupo-1{
@@ -57,9 +58,9 @@ footer{
     line-height: 45px;
     color: rgb(228, 236, 228);
     margin-right: 10px;
-    background-color: rgb(235, 12, 23);
+    background-color: rgb(140, 206, 147);
     text-align: center;
-    transition: all 300ms ease;
+    border-radius: 50%;
 }
 .pie-pagina .grupo-1 .red-social a:hover{
     color: rgb(44, 11, 235);

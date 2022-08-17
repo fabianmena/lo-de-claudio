@@ -128,10 +128,10 @@ p{
 
 iframe {
     display: flex;
-    width: 400px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
     border-color: black;
-    justify-content:left;
+    justify-content:center;
     margin: 1rem;
     padding: 2rem;
 }
@@ -250,9 +250,6 @@ iframe {
 .img__flex{
     display: flex;
     flex-direction: column;
-    
-    
-
 }
 
 
@@ -408,133 +405,97 @@ iframe {
                     }  
 
 /* grid comida rapida  */
-/*  
-.fastgrid{
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:    1fr 1fr 1fr;
-    grid-template-areas:"lana1 lana10 lana6"
-                        "lana1 lana4 lana2 "
-                        "lana3 lana4 lana5";
-    flex-wrap: wrap;
-                        
+.fastgrid__img{
+    width: 100px;
 }
 
+.fastgrid{
+    display: grid;
+    width: 97vw;
+    height: 97vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:    1fr 1fr 1fr ;
+    grid-template-areas:"roti1 roti10 roti6"
+                        "roti1 roti4 roti2 "
+                        "roti3 roti4 roti5";
+}
+
+
 .roti1{
-    grid-area: lana1;
+    grid-area: roti1;
     background-image: url("../resourses/png.chedarrayado - copia.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: #161716 solid 10px;
+    margin: 5px;
+    padding: 5px;
 }
 .roti2{
-    grid-area: lana10;
-    display: flex;
-    color: bisque;
-    font-size: 32px;
-    justify-content: center;
-    align-items: center;
+    grid-area: roti10;
+    
+    background-image: url("../resourses/pizafullqueso.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    padding: 5px;
+}
+.roti3{
+    grid-area: roti2;
     background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: #161716 solid 10px;
+    margin: 5px;
+    padding: 5px;
 }
-.roti3{
-    grid-area: lana2;
-    background-image: url("../resourses/png.pizza bacon.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: #161716 solid 10px;
-}
-.roti4{
-    grid-area: lana3;
+
+.roti4{   
+    grid-area: roti3;
     background-image: url("../resourses/png.piza morron.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: #161716 solid 10px;
+    margin: 5px;
+    padding: 5px;
 }
 .roti5{
-    grid-area: lana4;
+    display: flex;
+    color: white;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    grid-area: roti4;
     background-image: url("../resourses/png.chedar.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: #161716 solid 10px;
+    margin: 5px;
+    padding: 5px;
+    
 }
 .roti6{
-    grid-area: lana5;
+    grid-area: roti5;
     background-image: url("../resourses/png.papas chedar casera.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: #161716 solid 10px;
+    margin: 5px;
+    padding: 5px;
 }
 .roti7{
-    grid-area: lana6;
+    grid-area: roti6;
     background-image: url("../resourses/png.milanesa con papa big.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: #161716 solid 10px;
+    margin: 5px;
+    padding: 5px;
+    
 } 
 
-.fastgrid {
-    display: grid;
-    gap: 10px;
-    grid-template-columns:repeat(auto-fit,minmax(150p, 1fr)) ;
 
-}
-.roti1 {
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    background-image: url("../resourses/png.chedarrayado - copia.png");
-
-}
-.roti2 {
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
-}
-.roti3 {
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    background-image: url("../resourses/png.milanesa con papa big.png");
-
-}
-.roti4{
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    background-image: url("../resourses/png.piza morron.png");
-}
-.roti5{
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
-}
-.roti6{
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
-}
-.roti7{
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
-}*/
-.fastgrid{
+/* .fastgrid{
     display: grid;
     width: 95vw;
     height: 95vh;
@@ -552,7 +513,7 @@ iframe {
     transform: scale( 1.5 ,  1.5 );
     transition: all 3s;
 }
-                /* utilizamos @extends para mbackgrounds repetitivos */
+                /* utilizamos @extends para mbackgrounds repetitivos 
 .roti1{
     grid-area:  uno;
     background-image: url("../resourses/png.jug pop it.png");
@@ -599,13 +560,6 @@ iframe {
     box-shadow: 5px 5px 10px;
     border-radius: 10px;
 }
-.roti7{
-    grid-area:  siete;
-    background-image: url("../resourses/png.jug colorear.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
-
+ */
 
     
