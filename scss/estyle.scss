@@ -27,27 +27,7 @@ body{
 }
 
 
-.cont__container{
-    display: grid;
-    width: 80vw;
-    height: 80vh;
-    grid-template-columns:1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-    
-}
-.pictures{
-    width: 200px;
-    height: 200px;
-}
 
-
-
-
-.picture {
-    padding: 15px;
-    width: 100%;
-    height: 100%;
-}
 
 h1 {
     color: $colorh1 ;
@@ -55,9 +35,6 @@ h1 {
     font-family: $font-secundario; 
     text-align: center;
     }
-
-
-
 h2 {
     color: $colorh2;
     font-family: $font-titulos;
@@ -65,25 +42,8 @@ h2 {
 h3{
     font-family:$font-secundario;
 }
-
-
-.i{
-        margin: 20px;
-        list-style:circle;
-        font-family: 'Audiowide', cursive;
-    }
-.cont__container{
-    display: flex;
-    justify-items: center;
-    justify-content: space-evenly;
-
-}   
-
 .container{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
 }
 /* aplicando anidacion a tarjeta descriptivas */
 .card{
@@ -96,7 +56,8 @@ h3{
     margin: 20px;
     box-shadow: 5px 5px 10px;
     border-radius: 10px;
-    
+    justify-content: center;
+    flex-wrap: wrap;
             &__img{
                 width: 100%;
                 height: 100%;
@@ -119,13 +80,10 @@ p{
     padding: 10px;
 
 }
-
-
 .parrafo__historia{
     font-family: 'DynaPuff', cursive;
     text-decoration-style:dashed;
 }
-
 iframe {
     display: flex;
     width: 700px;
@@ -135,16 +93,7 @@ iframe {
     margin: 1rem;
     padding: 2rem;
 }
-
-.pagprin{
-    display: flex;
-    color: black;
-    text-decoration: none;
-    justify-content: end;
-
-}
-
-
+/* galeria jugueteria con grid */ 
 .productos__grid{
     display: grid;
     width: 95vw;
@@ -163,106 +112,96 @@ iframe {
     transform: scale( 1.5 ,  1.5 );
     transition: all 3s;
 }
-                /* utilizamos @extends para mbackgrounds repetitivos */
-.un{
-    grid-area:  uno;
-    background-image: url("../resourses/png.jug pop it.png");
-    @extend .background-centrado;
-    width: auto;
-    height: auto;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
+                /* utilizamos @extends para backgrounds repetitivos */
+                    .un{
+                        grid-area:  uno;
+                        background-image: url("../resourses/png.jug pop it.png");
+                        @extend .background-centrado;
+                        width: auto;
+                        height: auto;
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
 
-.do{
-    grid-area:  dos;
-    background-image: url("../resourses/png.jug peluches.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
+                    .do{
+                        grid-area:  dos;
+                        background-image: url("../resourses/png.jug peluches.png");
+                        @extend .background-centrado;
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
 
-.tre{
-    grid-area:  tres ;
-    background-image: url("../resourses/png.jug muñecas.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
-.cuatr {
-    grid-area: cuatro;
-    background-image: url("../resourses/png.jug doctora.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
-.cinc{
-    grid-area: cinco;
-    background-image: url("../resourses/png.jug dino.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
-.sei{
-    grid-area:  seis;
-    background-image: url("../resourses/png.jug de mesa.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
-.siet{
-    grid-area:  siete;
-    background-image: url("../resourses/png.jug colorear.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
-.och{grid-area:  ocho;
-    background-image: url("../resourses/png.jug autos.png");
-    @extend .background-centrado;  
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;                 
-}
-.nuev{grid-area:  nueve;
-    background-image: url("../resourses/png.jug armas.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}                                  
-.die{grid-area:  diez;
-    background-image: url("../resourses/juguetes.jpg");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}                                 
-.onc{grid-area:  once;
-    background-image: url("../resourses/png.jug patin.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
-.doc{grid-area:  doce;
-    background-image: url("../resourses/png.jug pelotaypaleta.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
+                    .tre{
+                        grid-area:  tres ;
+                        background-image: url("../resourses/png.jug muñecas.png");
+                        @extend .background-centrado;
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
+                    .cuatr {
+                        grid-area: cuatro;
+                        background-image: url("../resourses/png.jug doctora.png");
+                        @extend .background-centrado;
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
+                    .cinc{
+                        grid-area: cinco;
+                        background-image: url("../resourses/png.jug dino.png");
+                        @extend .background-centrado;
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
+                    .sei{
+                        grid-area:  seis;
+                        background-image: url("../resourses/png.jug de mesa.png");
+                        @extend .background-centrado;
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
+                    .siet{
+                        grid-area:  siete;
+                        background-image: url("../resourses/png.jug colorear.png");
+                        @extend .background-centrado;
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
+                    .och{grid-area:  ocho;
+                        background-image: url("../resourses/png.jug autos.png");
+                        @extend .background-centrado;  
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;                 
+                    }
+                    .nuev{grid-area:  nueve;
+                        background-image: url("../resourses/png.jug armas.png");
+                        @extend .background-centrado;
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }                                  
+                    .die{grid-area:  diez;
+                        background-image: url("../resourses/juguetes.jpg");
+                        @extend .background-centrado;
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }                                 
+                    .onc{grid-area:  once;
+                        background-image: url("../resourses/png.jug patin.png");
+                        @extend .background-centrado;
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
+                    .doc{grid-area:  doce;
+                        background-image: url("../resourses/png.jug pelotaypaleta.png");
+                        @extend .background-centrado;
+                        box-shadow: 5px 5px 10px;
+                        border-radius: 10px;
+                    }
 .img__flex{
     display: flex;
     flex-direction: column;
 }
 
-
-
-
-
-
-
-
-
-
-
-    /* main galeria grid zf */
+/* galeria blanqueria -productos zf-grid /aplicacion de @extend*/
             .galeria_grid {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -404,11 +343,10 @@ iframe {
                         border-radius: 10px;
                     }  
 
-/* grid comida rapida  */
+        /* galeria rotiseria grid  */
 .fastgrid__img{
     width: 100px;
 }
-
 .fastgrid{
     display: grid;
     width: 97vw;
@@ -419,147 +357,76 @@ iframe {
                         "roti1 roti4 roti2 "
                         "roti3 roti4 roti5";
 }
+            .roti1{
+                grid-area: roti1;
+                background-image: url("../resourses/png.chedarrayado - copia.png");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 5px;
+                padding: 5px;
+            }
+            .roti2{
+                grid-area: roti10;
+                
+                background-image: url("../resourses/pizafullqueso.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 5px;
+                padding: 5px;
+            }
+            .roti3{
+                grid-area: roti2;
+                background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 5px;
+                padding: 5px;
+            }
+            .roti4{   
+                grid-area: roti3;
+                background-image: url("../resourses/png.piza morron.png");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 5px;
+                padding: 5px;
+            }
+            .roti5{
+                display: flex;
+                color: white;
+                font-size: 100px;
+                justify-content: center;
+                align-items: center;
+                grid-area: roti4;
+                background-image: url("../resourses/png.chedar.png");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 5px;
+                padding: 5px;
+                
+            }
+            .roti6{
+                grid-area: roti5;
+                background-image: url("../resourses/png.papas chedar casera.png");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 5px;
+                padding: 5px;
+            }
+            .roti7{
+                grid-area: roti6;
+                background-image: url("../resourses/png.milanesa con papa big.png");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 5px;
+                padding: 5px;
+            }     
+            
 
 
-.roti1{
-    grid-area: roti1;
-    background-image: url("../resourses/png.chedarrayado - copia.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
-    padding: 5px;
-}
-.roti2{
-    grid-area: roti10;
-    
-    background-image: url("../resourses/pizafullqueso.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
-    padding: 5px;
-}
-.roti3{
-    grid-area: roti2;
-    background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
-    padding: 5px;
-}
-
-.roti4{   
-    grid-area: roti3;
-    background-image: url("../resourses/png.piza morron.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
-    padding: 5px;
-}
-.roti5{
-    display: flex;
-    color: white;
-    font-size: 100px;
-    justify-content: center;
-    align-items: center;
-    grid-area: roti4;
-    background-image: url("../resourses/png.chedar.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
-    padding: 5px;
-    
-}
-.roti6{
-    grid-area: roti5;
-    background-image: url("../resourses/png.papas chedar casera.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
-    padding: 5px;
-}
-.roti7{
-    grid-area: roti6;
-    background-image: url("../resourses/png.milanesa con papa big.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
-    padding: 5px;
-    
-} 
-
-
-/* .fastgrid{
-    display: grid;
-    width: 95vw;
-    height: 95vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:    2fr 2fr 2fr 2fr   ;
-    grid-template-areas:"uno     dos    tres"
-                        "cuatro  cinco  seis"
-                        "siete   ocho  nueve"
-                        "diez  once  doce" ;
-                        column-gap: 20px;
-                        row-gap: 10px;
-                    
-}
-.fastgrid :hover{
-    transform: scale( 1.5 ,  1.5 );
-    transition: all 3s;
-}
-                /* utilizamos @extends para mbackgrounds repetitivos 
-.roti1{
-    grid-area:  uno;
-    background-image: url("../resourses/png.jug pop it.png");
-    @extend .background-centrado;
-    width: auto;
-    height: auto;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
-
-.roti2{
-    grid-area:  dos;
-    background-image: url("../resourses/png.jug peluches.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
-
-.roti3{
-    grid-area:  tres ;
-    background-image: url("../resourses/png.jug muñecas.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
-.roti4 {
-    grid-area: cuatro;
-    background-image: url("../resourses/png.jug doctora.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
-.roti5{
-    grid-area: cinco;
-    background-image: url("../resourses/png.jug dino.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
-.roti6{
-    grid-area:  seis;
-    background-image: url("../resourses/png.jug de mesa.png");
-    @extend .background-centrado;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-}
- */
-
-    
