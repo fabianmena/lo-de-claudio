@@ -130,6 +130,19 @@ footer {
   justify-content: space-between;
   color: #da2f8a; }
 
+.ulfater {
+  display: flex;
+  justify-content: flex-end; }
+
+.lista__navfoot {
+  display: flex;
+  background-color: #472953;
+  margin: 10px;
+  border: 1px solid black;
+  justify-content: flex-end;
+  border-radius: 40%;
+  align-items: center; }
+
 .redes {
   width: 25px; }
 
@@ -308,7 +321,7 @@ iframe {
 /* utilizamos @extends para mbackgrounds repetitivos */
 .un {
   grid-area: uno;
-  background-image: url("../resourses/png.jug pop it.png");
+  background-image: url("../resourses/jug pop it.jpg");
   width: auto;
   height: auto;
   box-shadow: 5px 5px 10px;
@@ -316,25 +329,25 @@ iframe {
 
 .do {
   grid-area: dos;
-  background-image: url("../resourses/png.jug peluches.png");
+  background-image: url("../resourses/jug peluches.jpg");
   box-shadow: 5px 5px 10px;
   border-radius: 10px; }
 
 .tre {
   grid-area: tres;
-  background-image: url("../resourses/png.jug muñecas.png");
+  background-image: url("../resourses/jug muñecas.jpg");
   box-shadow: 5px 5px 10px;
   border-radius: 10px; }
 
 .cuatr {
   grid-area: cuatro;
-  background-image: url("../resourses/png.jug doctora.png");
+  background-image: url("../resourses/jug doctora.jpg");
   box-shadow: 5px 5px 10px;
   border-radius: 10px; }
 
 .cinc {
   grid-area: cinco;
-  background-image: url("../resourses/png.jug dino.png");
+  background-image: url("../resourses/jug dino.jpg");
   box-shadow: 5px 5px 10px;
   border-radius: 10px; }
 
@@ -346,19 +359,19 @@ iframe {
 
 .siet {
   grid-area: siete;
-  background-image: url("../resourses/png.jug colorear.png");
+  background-image: url("../resourses/jug colorear.jpg");
   box-shadow: 5px 5px 10px;
   border-radius: 10px; }
 
 .och {
   grid-area: ocho;
-  background-image: url("../resourses/png.jug autos.png");
+  background-image: url("../resourses/jug autos.jpg");
   box-shadow: 5px 5px 10px;
   border-radius: 10px; }
 
 .nuev {
   grid-area: nueve;
-  background-image: url("../resourses/png.jug armas.png");
+  background-image: url("../resourses/jug armas.jpg");
   box-shadow: 5px 5px 10px;
   border-radius: 10px; }
 
@@ -370,13 +383,13 @@ iframe {
 
 .onc {
   grid-area: once;
-  background-image: url("../resourses/png.jug patin.png");
+  background-image: url("../resourses/jug patin.jpg");
   box-shadow: 5px 5px 10px;
   border-radius: 10px; }
 
 .doc {
   grid-area: doce;
-  background-image: url("../resourses/png.jug pelotaypaleta.png");
+  background-image: url("../resourses/jug pelotaypaleta.jpg");
   box-shadow: 5px 5px 10px;
   border-radius: 10px; }
 
@@ -394,7 +407,7 @@ iframe {
 .one {
   grid-column: 1 / 2;
   grid-row: 1;
-  background-image: url("../resourses/acolchadovintage - copia.jpg");
+  background-image: url("../resourses/acolchadovintage.jpg");
   margin: 1rem;
   padding: 1rem;
   border: solid #121239;
@@ -414,7 +427,7 @@ iframe {
 .three {
   grid-column: 1;
   grid-row: 2 / 5;
-  background-image: url("../resourses/png.peluches gatitos.png");
+  background-image: url("../resourses/zfunicorniopeluche.jpg");
   margin: 1rem;
   padding: 1rem;
   border: solid #131316;
@@ -424,7 +437,7 @@ iframe {
 .four {
   grid-column: 3;
   grid-row: 3 / 3;
-  background-image: url("../resourses/almohada roja milena - copia.jpg");
+  background-image: url("../resourses/gatitos fondo azul.jpg");
   margin: 1rem;
   padding: 1rem;
   border: solid #131316;
@@ -504,16 +517,35 @@ iframe {
 .twelve {
   grid-column: 3;
   grid-row: 4;
-  background-image: url("../resourses/zfunicorniopeluche.jpg");
+  background-image: url("../resourses/almohada mateo.jpg");
   margin: 1rem;
   padding: 1rem;
   border: solid #131316;
   box-shadow: 5px 5px 10px;
   border-radius: 10px; }
 
+/* reponsive galeria blanqueria zf tablet */
+@media (min-width: 576px) and (max-width: 900px) {
+  .galeria_grid {
+    display: flex;
+    flex-direction: column; }
+  .media {
+    width: 700px;
+    height: 200px; } }
+
+/* responsive galeria blanqueria zf movil */
+@media (min-width: 320px) and (max-width: 575px) {
+  .galeria_grid {
+    display: flex;
+    flex-direction: column; }
+  .media {
+    width: 500px;
+    height: 200px; } }
+
 /* galeria rotiseria grid  */
 .fastgrid__img {
-  width: 100px; }
+  display: flex;
+  flex-direction: column; }
 
 .fastgrid {
   display: grid;
@@ -521,11 +553,13 @@ iframe {
   height: 97vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "roti1 roti10 roti6" "roti1 roti4 roti2 " "roti3 roti4 roti5"; }
+  grid-template-areas: "roti1 roti10 roti6" "roti1 roti4 roti2 " "roti3 roti4 roti5";
+  column-gap: 20px;
+  row-gap: 10px; }
 
 .roti1 {
   grid-area: roti1;
-  background-image: url("../resourses/png.chedarrayado - copia.png");
+  background-image: url("../resourses/chedarrayado.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -543,7 +577,7 @@ iframe {
 
 .roti3 {
   grid-area: roti2;
-  background-image: url("../resourses/png.pizza con pelotitas de cheddar.png");
+  background-image: url("../resourses/pizza con pelotitas de cheddar.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -552,7 +586,7 @@ iframe {
 
 .roti4 {
   grid-area: roti3;
-  background-image: url("../resourses/png.piza morron.png");
+  background-image: url("../resourses/piza morron.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -566,7 +600,7 @@ iframe {
   justify-content: center;
   align-items: center;
   grid-area: roti4;
-  background-image: url("../resourses/png.chedar.png");
+  background-image: url("../resourses/chedar.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -575,7 +609,7 @@ iframe {
 
 .roti6 {
   grid-area: roti5;
-  background-image: url("../resourses/png.papas chedar casera.png");
+  background-image: url("../resourses/papas chedar casera.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -584,9 +618,89 @@ iframe {
 
 .roti7 {
   grid-area: roti6;
-  background-image: url("../resourses/png.milanesa con papa big.png");
+  background-image: url("../resourses/milanesa con papa big.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 5px;
   padding: 5px; }
+
+/* reponsive galeria blanqueria zf tablet */
+@media (min-width: 576px) and (max-width: 900px) {
+  .fastgrid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%; }
+  .fast {
+    width: 700px;
+    height: 500px;
+    box-shadow: 5px 5px 10px; }
+  .roti1 {
+    height: 30rem;
+    border-radius: 10%;
+    border: #272330 solid; }
+  .roti2 {
+    height: 30rem;
+    border-radius: 10%;
+    border: #272330 solid; }
+  .roti3 {
+    height: 30rem;
+    border-radius: 10%;
+    border: #272330 solid; }
+  .roti4 {
+    height: 30rem;
+    border-radius: 10%;
+    border: #272330 solid; }
+  .roti5 {
+    height: 30rem;
+    border-radius: 10%;
+    border: #272330 solid; }
+  .roti6 {
+    height: 30rem;
+    border-radius: 10%;
+    border: #272330 solid; }
+  .roti7 {
+    height: 30rem;
+    border-radius: 10%;
+    border: #272330 solid; } }
+
+/* responsive galeria blanqueria zf movil */
+@media (min-width: 320px) and (max-width: 575px) {
+  .fastgrid {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 60%; }
+  .fast {
+    width: 385px;
+    height: 200px;
+    box-shadow: 5px 5px 10px; }
+  .roti1 {
+    height: 20rem;
+    border-radius: 10%;
+    border: #272330 solid; }
+  .roti2 {
+    height: 20rem;
+    border-radius: 10%;
+    border: #272330 solid; }
+  .roti3 {
+    height: 30rem;
+    border-radius: 10%;
+    border: #272330 solid; }
+  .roti4 {
+    height: 30rem;
+    border-radius: 10%;
+    border: #272330 solid; }
+  .roti5 {
+    height: 30rem;
+    border-radius: 10%;
+    border: #272330 solid; }
+  .roti6 {
+    height: 30rem;
+    border-radius: 10%;
+    border: #272330 solid; }
+  .roti7 {
+    height: 30rem;
+    border-radius: 10%;
+    border: #272330 solid; } }

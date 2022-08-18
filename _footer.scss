@@ -12,6 +12,22 @@ footer{
     justify-content: space-between;
     color: rgb(218, 47, 138);
 }
+.ulfater{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.lista__navfoot{
+    display: flex;
+    background-color: rgb(71, 41, 83);
+    margin: 10px;
+    border: 1px solid black;
+    justify-content: flex-end;
+    border-radius: 40%;
+    align-items: center;
+    }
+
 .redes {
     width: 25px;
 }
