@@ -282,7 +282,6 @@ p {
   color: black;
   margin: 0px;
   font-family: 'DynaPuff', cursive;
-  text-align: justify;
   padding: 10px; }
 
 .parrafo__historia {
@@ -291,10 +290,10 @@ p {
 
 iframe {
   display: flex;
-  width: 700px;
-  height: 500px;
+  width: 90%;
+  height: 30rem;
   border-color: black;
-  justify-content: center;
+  align-items: center;
   margin: 1rem;
   padding: 2rem; }
 
@@ -539,7 +538,7 @@ iframe {
     display: flex;
     flex-direction: column; }
   .media {
-    width: 500px;
+    width: 350px;
     height: 200px; } }
 
 /* galeria rotiseria grid  */
