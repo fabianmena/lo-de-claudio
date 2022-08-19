@@ -119,13 +119,13 @@
   background-repeat: no-repeat; }
 
 footer {
-  padding: 1em 0;
+  padding: 1rem;
   margin-top: auto; }
 
 .fut {
   display: inline-block;
-  margin: 20px;
-  padding: 20px;
+  margin: 30px;
+  padding: 30px;
   align-items: center;
   justify-content: space-between;
   color: #da2f8a; }
@@ -147,7 +147,8 @@ footer {
   width: 25px; }
 
 .pie-pagina {
-  width: 100%;
+  width: 98%;
+  height: auto;
   background-color: #110c0e;
   margin: 10px; }
 
@@ -205,6 +206,10 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px; } }
+
+.ancho__an {
+  border-radius: 10%;
+  height: 500px; }
 
 /* color de letras */
 /* titulos */
