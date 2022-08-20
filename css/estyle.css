@@ -122,27 +122,6 @@ footer {
   padding: 1rem;
   margin-top: auto; }
 
-.fut {
-  display: inline-block;
-  margin: 30px;
-  padding: 30px;
-  align-items: center;
-  justify-content: space-between;
-  color: #da2f8a; }
-
-.ulfater {
-  display: flex;
-  justify-content: flex-end; }
-
-.lista__navfoot {
-  display: flex;
-  background-color: #472953;
-  margin: 15px;
-  border: 1px solid black;
-  justify-content: flex-end;
-  border-radius: 40%;
-  align-items: center; }
-
 .redes {
   width: 25px; }
 
@@ -209,8 +188,11 @@ footer {
 
 /* mdificando las img de carrousel de bootstrap */
 .ancho__an {
-  border-radius: 10%;
-  height: 500px; }
+  border-radius: 5%;
+  height: 650px;
+  width: 90%;
+  box-shadow: 0px 10px 10px 10px;
+  margin: 30px; }
 
 /* color de letras */
 /* titulos */
