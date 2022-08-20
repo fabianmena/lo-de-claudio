@@ -21,7 +21,7 @@ footer{
 .lista__navfoot{
     display: flex;
     background-color: rgb(71, 41, 83);
-    margin: 10px;
+    margin: 15px;
     border: 1px solid black;
     justify-content: flex-end;
     border-radius: 40%;
@@ -97,8 +97,9 @@ footer{
         padding: 35px 0px;
     }
 }
-
+/* mdificando las img de carrousel de bootstrap */
 .ancho__an{
     border-radius: 10%;
     height: 500px;
+    
 }

@@ -137,7 +137,7 @@ footer {
 .lista__navfoot {
   display: flex;
   background-color: #472953;
-  margin: 10px;
+  margin: 15px;
   border: 1px solid black;
   justify-content: flex-end;
   border-radius: 40%;
@@ -207,6 +207,7 @@ footer {
     grid-gap: 30px;
     padding: 35px 0px; } }
 
+/* mdificando las img de carrousel de bootstrap */
 .ancho__an {
   border-radius: 10%;
   height: 500px; }
@@ -241,12 +242,12 @@ body {
 h1 {
   color: black;
   padding: 40px;
-  font-family: "DynaPuff", cursive;
+  font-family: "Rubik Distressed", cursive;
   text-align: center; }
 
 h2 {
   color: black;
-  font-family: "Audiowide", cursive; }
+  font-family: "Rubik Distressed", cursive; }
 
 h3 {
   font-family: "DynaPuff", cursive; }
@@ -287,7 +288,8 @@ p {
   color: black;
   margin: 0px;
   font-family: 'DynaPuff', cursive;
-  padding: 10px; }
+  padding: 10px;
+  margin: 10px; }
 
 .parrafo__historia {
   font-family: 'DynaPuff', cursive;
