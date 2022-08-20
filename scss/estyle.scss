@@ -411,39 +411,22 @@ iframe {
             .roti1{
                 grid-area: roti1;
                 background-image: url("../resourses/chedarrayado.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                margin: 5px;
-                padding: 5px;
+                @extend.background-centrado-roti;
             }
             .roti2{
                 grid-area: roti10;
-                
                 background-image: url("../resourses/pizafullqueso.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                margin: 5px;
-                padding: 5px;
+                @extend.background-centrado-roti;
             }
             .roti3{
                 grid-area: roti2;
                 background-image: url("../resourses/pizza\ con\ pelotitas\ de\ cheddar.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                margin: 5px;
-                padding: 5px;
+                @extend.background-centrado-roti;
             }
             .roti4{   
                 grid-area: roti3;
                 background-image: url("../resourses/piza\ morron.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                margin: 5px;
-                padding: 5px;
+                @extend.background-centrado-roti;
             }
             .roti5{
                 display: flex;
@@ -453,30 +436,18 @@ iframe {
                 align-items: center;
                 grid-area: roti4;
                 background-image: url("../resourses/chedar.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                margin: 5px;
-                padding: 5px;
+                @extend.background-centrado-roti;
                 
             }
             .roti6{
                 grid-area: roti5;
                 background-image: url("../resourses/papas\ chedar\ casera.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                margin: 5px;
-                padding: 5px;
+                @extend.background-centrado-roti;
             }
             .roti7{
                 grid-area: roti6;
                 background-image: url("../resourses/milanesa\ con\ papa\ big.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                margin: 5px;
-                padding: 5px;
+                @extend.background-centrado-roti;
             }     
 
             /* reponsive galeria blanqueria zf tablet */
