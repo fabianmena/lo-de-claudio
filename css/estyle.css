@@ -237,8 +237,10 @@ h1 {
   text-align: center; }
 
 .size {
+  padding: 10px;
   font-weight: normal;
-  font-size: 150px; }
+  font-size: 500%;
+  text-align: start; }
 
 h2 {
   color: black;
