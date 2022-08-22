@@ -233,12 +233,16 @@ body {
 h1 {
   color: black;
   padding: 40px;
-  font-family: "Rubik Distressed", cursive;
+  font-family: "Alumni Sans Collegiate One", sans-serif;
   text-align: center; }
+
+.size {
+  font-weight: normal;
+  font-size: 150px; }
 
 h2 {
   color: black;
-  font-family: "Rubik Distressed", cursive; }
+  font-family: "Alumni Sans Collegiate One", sans-serif; }
 
 h3 {
   font-family: "DynaPuff", cursive; }
@@ -332,7 +336,7 @@ iframe {
 
 .tre {
   grid-area: tres;
-  background-image: url("../resourses/jug muñecas.jpg");
+  background-image: url("../resourses/jug registradora.jpg");
   box-shadow: 5px 5px 10px;
   border-radius: 10px; }
 
@@ -350,7 +354,7 @@ iframe {
 
 .sei {
   grid-area: seis;
-  background-image: url("../resourses/png.jug de mesa.png");
+  background-image: url("../resourses/jug naipes.jpg");
   box-shadow: 5px 5px 10px;
   border-radius: 10px; }
 

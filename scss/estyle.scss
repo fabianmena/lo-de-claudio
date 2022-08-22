@@ -35,6 +35,10 @@ h1 {
     font-family: $font-titulos; 
     text-align: center;
     }
+.size{
+    font-weight: normal;
+    font-size: 150px;
+}
 h2 {
     color: $colorh2;
     font-family: $font-titulos;
@@ -158,7 +162,7 @@ iframe {
 
                     .tre{
                         grid-area:  tres ;
-                        background-image: url("../resourses/jug\ muñecas.jpg");
+                        background-image: url("../resourses/jug\ registradora.jpg");
                         @extend .background-centrado;
                         box-shadow: 5px 5px 10px;
                         border-radius: 10px;
@@ -179,7 +183,7 @@ iframe {
                     }
                     .sei{
                         grid-area:  seis;
-                        background-image: url("../resourses/png.jug de mesa.png");
+                        background-image: url("../resourses/jug\ naipes.jpg");
                         @extend .background-centrado;
                         box-shadow: 5px 5px 10px;
                         border-radius: 10px;
